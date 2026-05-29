@@ -1,5 +1,7 @@
 ---
 title: "Workshop"
+linkTitle: "Workshop"
+menuTitle: "Workshop"
 date: 2026-05-29
 weight: 5
 chapter: false
