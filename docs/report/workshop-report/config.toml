@@ -1,4 +1,4 @@
-baseURL = "https://workshop-sample.fcjuni.com/"
+baseURL = "https://ngthhaiha.github.io/aws-ecommerce-analytics-data-lake/"
 relativeURLs = false
 canonifyURLs = false
 defaultContentLanguage = "en"
