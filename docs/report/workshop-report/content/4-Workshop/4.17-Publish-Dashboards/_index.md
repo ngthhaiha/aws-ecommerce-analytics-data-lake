@@ -7,7 +7,6 @@ weight: 570
 chapter: false
 ---
 
-# 4.17. Publish Dashboards
 
 After completing the design and reviewing the visuals in the Analyses, it is necessary to publish to create an official dashboard.
 

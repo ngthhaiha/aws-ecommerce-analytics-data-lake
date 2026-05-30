@@ -6,9 +6,7 @@ menuTitle: "4.18.4. Use EventBridge for Scheduling"
 date: 2026-05-29
 weight: 584
 chapter: false
---------------
-
-# 4.18.4. Use EventBridge for Scheduling
+---
 
 EventBridge Scheduler is responsible for running the workflow on a schedule, while Glue Workflow is responsible for orchestrating the execution order: Raw Crawler → ETL Job → Curated Crawler.
 
@@ -48,7 +46,7 @@ Then click **Create policy**.
 
 #### Create an IAM Role for EventBridge Scheduler
 
-CREATE ROLE:
+##### CREATE ROLE:
 
 Go to **IAM** → **Roles** → **Create role**.
 
@@ -77,7 +75,7 @@ Then click **Next**.
 
 ![](/images/4-Workshop/4.18.4-Su-dung-EventBridge-de-schedule/image-005.png)
 
-ATTACH POLICY
+##### ATTACH POLICY
 
 In the **Add permissions** step, search for and select the policy **AllowStartGlueWorkflow**.
 
@@ -151,9 +149,7 @@ Then click **Next**.
 
 * Execution role: **Use existing role**
 
-```sql
-Select an existing role: EventBridgeSchedulerStartGlueWorkflowRole
-```
+* Select an existing role: **EventBridgeSchedulerStartGlueWorkflowRole**
 
 Then click **Next**.
 

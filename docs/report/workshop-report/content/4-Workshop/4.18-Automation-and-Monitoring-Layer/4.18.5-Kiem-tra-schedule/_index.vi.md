@@ -7,11 +7,9 @@ weight: 585
 chapter: false
 ---
 
-# 4.18.5. Kiểm tra schedule
+Sau khi EventBridge Scheduler chạy theo lịch, kiểm tra workflow tại: **AWS Glue** → **Workflows** → **ecommerce-scheduled-etl-workflow** → **History** (mục 4.18.2)
 
-Sau khi EventBridge Scheduler chạy theo lịch, kiểm tra workflow tại: AWS Glue → Workflows → ecommerce-scheduled-etl-workflow → History (mục 17.2.5)
-
-Ngoài ra, có thể kiểm tra thêm bằng cách truy cập vào dịch vụ AWS Glue, trong tùy chọn bên trái chọn Job run monitoring để xác nhận Glue ETL Job etl_ecommerce_raw_to_curated_1 đã được tự động chạy theo lịch mỗi ngày lúc 9:00.
+Ngoài ra, có thể kiểm tra thêm bằng cách truy cập vào dịch vụ AWS Glue, trong tùy chọn bên trái chọn Job run monitoring để xác nhận Glue ETL Job **etl_ecommerce_raw_to_curated_1** đã được tự động chạy theo lịch mỗi ngày lúc 9:00.
 
 Trong hình ta thấy các job đã được tự động chạy mỗi ngày 1 lần theo lịch vào lúc 9:00 kể từ ngày tạo Workflow (25/05/2026)
 

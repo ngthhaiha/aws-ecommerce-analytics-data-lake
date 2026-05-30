@@ -6,9 +6,7 @@ menuTitle: "4.18.3. Check CloudWatch Logs for Glue ETL Job"
 date: 2026-05-29
 weight: 583
 chapter: false
---------------
-
-# 4.18.3. Check CloudWatch Logs for Glue ETL Job
+---
 
 Access the **AWS Management Console**, search for and select the **CloudWatch** service.
 
@@ -23,7 +21,7 @@ Commonly used log groups:
 
 ![](/images/4-Workshop/4.18.3-Kiem-tra-CloudWatch-Logs-cho-Glue-ETL-Job/image-002.png)
 
-Purpose:
+**Purpose**:
 
 * Monitor the ETL job execution process.
 

@@ -8,8 +8,6 @@ weight: 581
 chapter: false
 --------------
 
-# 4.18.1. Create SNS Email Notification
-
 #### Access Amazon SNS
 
 Access the AWS Management Console, search for and select the **Simple Notification Service**.

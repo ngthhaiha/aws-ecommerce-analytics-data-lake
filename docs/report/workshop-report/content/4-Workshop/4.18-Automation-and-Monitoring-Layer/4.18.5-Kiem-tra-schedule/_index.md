@@ -7,19 +7,11 @@ weight: 585
 chapter: false
 ---
 
-# 4.18.5. Check the Schedule
+After EventBridge Scheduler runs according to the configured schedule, check the workflow at: **AWS Glue** → **Workflows** → **ecommerce-scheduled-etl-workflow** → **History** (section 4.18.2)
 
-This page validates that the EventBridge schedule exists and is ready to run the workflow.
+In addition, you can also check by accessing the AWS Glue service, then selecting **Job run monitoring** from the left-side menu to confirm that the Glue ETL Job **etl_ecommerce_raw_to_curated_1** has been automatically triggered every day at 9:00.
 
-## What This Page Covers
-- Open EventBridge Scheduler.
-- Find the schedule created for the Glue Workflow.
-- Check the schedule expression and enabled state.
-- Confirm that the target points to the correct Glue Workflow.
-- Monitor the next run through Glue Workflow and CloudWatch Logs.
-
-## Screenshots
-
-The following screenshots match the implementation steps in this page.
+In the image, we can see that the jobs have been automatically run once per day according to the schedule at 9:00 since the Workflow was created (25/05/2026).
 
 ![](/images/4-Workshop/4.18.5-Kiem-tra-schedule/image-001.png)
+

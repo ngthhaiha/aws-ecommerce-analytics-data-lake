@@ -6,25 +6,14 @@ menuTitle: "4.18.2. Create Glue Workflow"
 date: 2026-05-29
 weight: 582
 chapter: false
---------------
-
-# 4.18.2. Create Glue Workflow
+---
 
 A Glue Workflow is used to group pipeline steps into an ordered processing flow.
 
 The workflow to be created:
 
 ```text
-Start Workflow
-      |
-      v
-crawler_ecommerce_raw
-      |
-      v
-etl_ecommerce_raw_to_curated_1
-      |
-      v
-crawler_ecommerce_curated
+Start Workflow -> crawler_ecommerce_raw -> etl_ecommerce_raw_to_curated_1 -> crawler_ecommerce_curated
 ```
 
 #### Create Workflow

@@ -7,21 +7,19 @@ weight: 583
 chapter: false
 ---
 
-# 4.18.3. Kiểm tra CloudWatch Logs cho Glue ETL Job
-
-Truy cập AWS Management Console, tìm kiếm và chọn dịch vụ CloudWatch
+Truy cập **AWS Management Console**, tìm kiếm và chọn dịch vụ **CloudWatch**.
 
 ![](/images/4-Workshop/4.18.3-Kiem-tra-CloudWatch-Logs-cho-Glue-ETL-Job/image-001.png)
 
-Sau khi Glue Workflow chạy, kiểm tra log của Glue ETL Job tại CloudWatch → Logs → Log groups
-
+Sau khi Glue Workflow chạy, kiểm tra log của Glue ETL Job tại **CloudWatch** → **Logs** → **Log groups
+**
 Các log group thường dùng:
 - /aws-glue/jobs/output
 - /aws-glue/jobs/error
 
 ![](/images/4-Workshop/4.18.3-Kiem-tra-CloudWatch-Logs-cho-Glue-ETL-Job/image-002.png)
 
-Mục đích:
+**Mục đích**:
 
 - Theo dõi quá trình chạy ETL job.
 

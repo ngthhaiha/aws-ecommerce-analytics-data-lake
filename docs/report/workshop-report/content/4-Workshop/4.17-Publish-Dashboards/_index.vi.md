@@ -7,15 +7,13 @@ weight: 570
 chapter: false
 ---
 
-# 4.17. Publish Dashboards
-
 Sau khi hoàn tất thiết kế và kiểm tra các visual trong Analyses, cần publish để tạo dashboard chính thức.
 
-Trong giao diện QuickSight Analysis, nhấn nút Publish
+Trong giao diện QuickSight Analysis, nhấn nút **Publish**.
 
 ![](/images/4-Workshop/4.17-Publish-Dashboards/image-001.png)
 
-Chọn New dashboard, điền tên dashboard và nhấn Publish dashboard.
+Chọn **New dashboard**, điền tên dashboard và nhấn **Publish dashboard**.
 
 ![](/images/4-Workshop/4.17-Publish-Dashboards/image-002.png)
 

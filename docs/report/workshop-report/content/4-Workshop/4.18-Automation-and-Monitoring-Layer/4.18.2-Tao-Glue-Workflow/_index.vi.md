@@ -7,38 +7,29 @@ weight: 582
 chapter: false
 ---
 
-# 4.18.2. Tạo Glue Workflow
-
 Glue Workflow dùng để gom các bước pipeline thành một luồng xử lý có thứ tự.
 
 Luồng workflow cần tạo:
 
-Start Workflow
-      |
-      v
-crawler_ecommerce_raw
-      |
-      v
-etl_ecommerce_raw_to_curated_1
-      |
-      v
-crawler_ecommerce_curated
+```text
+Start Workflow -> crawler_ecommerce_raw -> etl_ecommerce_raw_to_curated_1 -> crawler_ecommerce_curated
+```
 
 #### Tạo Workflow:
 
-Truy cập AWS Glue -> Workflows nhấn Add workflow
+Truy cập **AWS Glue** -> **Workflows** nhấn **Add workflow**.
 
 ![](/images/4-Workshop/4.18.2-Tao-Glue-Workflow/image-001.png)
 
-- Workflow name: ecommerce-scheduled-etl-workflow.
+- Workflow name: **ecommerce-scheduled-etl-workflow**
 
-Sau đó nhấn Create workflow để tạo workflow.
+Sau đó nhấn **Create workflow** để tạo workflow.
 
 ![](/images/4-Workshop/4.18.2-Tao-Glue-Workflow/image-002.png)
 
 Workflow đã được tạo thành công. Truy cập vào workflow đã tạo và tiến hành tạo trigger.
 
-Nhấn Add trigger để tạo trigger.
+Nhấn **Add trigger** để tạo trigger.
 
 ![](/images/4-Workshop/4.18.2-Tao-Glue-Workflow/image-003.png)
 
@@ -48,27 +39,27 @@ Trigger đầu tiên dùng để chạy raw crawler khi workflow bắt đầu.
 
 Ta cấu hình trigger như sau:
 
-- Name: trigger-start-raw-crawler
+- Name: **trigger-start-raw-crawler**
 
-- Description: Start raw crawler when workflow starts
+- Description: **Start raw crawler when workflow starts**
 
-- Trigger type: On demand
+- Trigger type: **On demand**
 
-Sau đó nhấn Add.
+Sau đó nhấn **Add**.
 
 ![](/images/4-Workshop/4.18.2-Tao-Glue-Workflow/image-004.png)
 
-Sau khi tạo trigger, ta gắn action cho trigger này bằng cách nhấn nút Action, chọn Add job/crawler to trigger.
+Sau khi tạo trigger, ta gắn action cho trigger này bằng cách nhấn nút **Action**, chọn **Add job/crawler to trigger**.
 
 ![](/images/4-Workshop/4.18.2-Tao-Glue-Workflow/image-005.png)
 
-Trong Add job(s) and crawler(s) to trigger:
+Trong **Add job(s) and crawler(s) to trigger**:
 
-- Chọn tab Crawler
+- Chọn tab **Crawler**
 
-- Chọn crawler  crawler_ecommerce_raw
+- Chọn crawler:  **crawler_ecommerce_raw**
 
-Sau đó nhấn Add.
+Sau đó nhấn **Add**.
 
 ![](/images/4-Workshop/4.18.2-Tao-Glue-Workflow/image-006.png)
 
@@ -80,33 +71,33 @@ Graph sau khi hoàn thành xong trigger 1 sẽ có hình dạng như sau:
 
 Trigger thứ hai dùng để chạy Glue ETL Job sau khi raw crawler chạy thành công.
 
-Sau khi đã có node Raw Crawler, ta tạo trigger thứ hai bằng cách chọn node crawler_ecommerce_raw và nhấn Add trigger
+Sau khi đã có node Raw Crawler, ta tạo trigger thứ hai bằng cách chọn node **crawler_ecommerce_raw** và nhấn **Add trigger**.
 
 ![](/images/4-Workshop/4.18.2-Tao-Glue-Workflow/image-008.png)
 
-Tiếp theo, gắn action cho trigger này, nhấn nút Action, chọn Add jobs/crawlers to watch.
+Tiếp theo, gắn action cho trigger này, nhấn nút **Action**, chọn **Add jobs/crawlers to watch**.
 
-Sau đó nhấn Add node, rồi cấu hình trigger như sau:
+Sau đó nhấn **Add node**, rồi cấu hình trigger như sau:
 
-- Name: trigger-after-raw-crawler-success
+- Name: **trigger-after-raw-crawler-success**
 
-- Description: Start ETL job after raw crawler succeeds
+- Description: **Start ETL job after raw crawler succeeds**
 
-- Trigger type: Event
+- Trigger type: **Event**
 
-- Trigger logic: Start after ANY watched event
+- Trigger logic: **Start after ANY watched event**
 
-Sau đó nhấn Add để them trigger.
+Sau đó nhấn **Add** để thêm trigger.
 
 ![](/images/4-Workshop/4.18.2-Tao-Glue-Workflow/image-009.png)
 
-Sau khi node được tạo thành công, nhấn Add node. Trong Add job(s) and crawler(s) to trigger:
+Sau khi node được tạo thành công, nhấn **Add node**. Trong **Add job(s) and crawler(s) to trigger**:
 
-- Chọn tab: Jobs
+- Chọn tab: **Jobs**
 
-- Chọn Glue Job: etl_ecommerce_raw_to_curated_1
+- Chọn Glue Job: **etl_ecommerce_raw_to_curated_1**
 
-Sau đó nhấn Add.
+Sau đó nhấn **Add**.
 
 ![](/images/4-Workshop/4.18.2-Tao-Glue-Workflow/image-010.png)
 
@@ -118,27 +109,27 @@ Add thành công trigger ta có graph của Workflow như hình dưới. Ở bư
 
 Trigger thứ ba dùng để chạy curated crawler sau khi Glue ETL Job chạy thành công.
 
-Từ node etl_ecommerce_raw_to_curated_1, nhấn Add trigger rồi cấu hình trigger như sau:
+Từ node **etl_ecommerce_raw_to_curated_1**, nhấn **Add trigger** rồi cấu hình trigger như sau:
 
-- Name: trigger-after-etl-success
+- Name: **trigger-after-etl-success**
 
-- Description: Start curated crawler after ETL job succeeds
+- Description: **Start curated crawler after ETL job succeeds**
 
-- Trigger type: Event
+- Trigger type: **Event**
 
-- Trigger logic: Start after ANY watched event
+- Trigger logic: **Start after ANY watched event**
 
-Sau đó nhấn Add
+Sau đó nhấn **Add**.
 
 ![](/images/4-Workshop/4.18.2-Tao-Glue-Workflow/image-012.png)
 
-Nhấn Add node. Trong Add job(s) and crawler(s) to trigger:
+Nhấn **Add node**. Trong **Add job(s) and crawler(s) to trigger**:
 
-- Chọn tab: Crawler
+- Chọn tab: **Crawler**
 
-- Chọn Crawler: crawler_ecommerce_curated
+- Chọn Crawler: **crawler_ecommerce_curated**
 
-Nhấn Add
+Nhấn **Add**.
 
 ![](/images/4-Workshop/4.18.2-Tao-Glue-Workflow/image-013.png)
 
@@ -148,13 +139,13 @@ Sau khi tạo hoàn tất 3 Trigger thì ta sẽ có workflow graph như sau:
 
 #### Run Glue Workflow
 
-Sau khi tạo xong workflow, nhấn Run workflow.
+Sau khi tạo xong workflow, nhấn **Run workflow**.
 
-Sau khi workflow chạy xong và Status là Completed nghĩa là workflow đã chạy thành công thì nhấn vào tab History để check workflow.
+Sau khi workflow chạy xong và Status là ***Completed*** nghĩa là workflow đã chạy thành công thì nhấn vào tab **History** để check workflow.
 
 ![](/images/4-Workshop/4.18.2-Tao-Glue-Workflow/image-015.png)
 
-Chọn workflow run mới nhất, sau đó nhấn View run details.
+Chọn workflow run mới nhất, sau đó nhấn **View run details**.
 
 ![](/images/4-Workshop/4.18.2-Tao-Glue-Workflow/image-016.png)
 

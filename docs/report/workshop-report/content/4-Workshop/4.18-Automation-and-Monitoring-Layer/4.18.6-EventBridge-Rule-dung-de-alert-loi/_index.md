@@ -6,9 +6,7 @@ menuTitle: "4.18.6. EventBridge Rule for Error Alerts"
 date: 2026-05-29
 weight: 586
 chapter: false
---------------
-
-# 4.18.6. EventBridge Rule for Error Alerts
+---
 
 We will use EventBridge to create rules that capture the following errors:
 

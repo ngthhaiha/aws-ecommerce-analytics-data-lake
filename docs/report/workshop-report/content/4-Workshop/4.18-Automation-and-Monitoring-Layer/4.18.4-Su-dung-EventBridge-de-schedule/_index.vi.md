@@ -7,17 +7,15 @@ weight: 584
 chapter: false
 ---
 
-# 4.18.4. Sử dụng EventBridge để schedule
-
 EventBridge Scheduler chịu trách nhiệm chạy workflow theo lịch, còn Glue Workflow chịu trách nhiệm điều phối thứ tự chạy Raw Crawler → ETL Job → Curated Crawler.
 
 #### Tạo IAM Policy
 
-Vào IAM -> Policies -> Create policy
+Vào **IAM** -> **Policies** -> **Create policy**.
 
 ![](/images/4-Workshop/4.18.4-Su-dung-EventBridge-de-schedule/image-001.png)
 
-- Chọn tab JSON
+- Chọn tab **JSON**
 
 - Dán policy này:
 
@@ -35,25 +33,23 @@ Vào IAM -> Policies -> Create policy
 }
 ```
 
-Nhấn Next.
+Nhấn **Next**.
 
 ![](/images/4-Workshop/4.18.4-Su-dung-EventBridge-de-schedule/image-002.png)
 
-- Policy name: AllowStartGlueWorkflow
+- Policy name: **AllowStartGlueWorkflow**
 
-Sau đó nhấn Create policy
+Sau đó nhấn **Create policy**.
 
 ![](/images/4-Workshop/4.18.4-Su-dung-EventBridge-de-schedule/image-003.png)
 
 #### Tạo IAM role cho EventBridge Scheduler
 
-TẠO ROLE:
-
-IAM → Roles → Create role
+TẠO ROLE: **IAM** → **Roles** → **Create role**.
 
 ![](/images/4-Workshop/4.18.4-Su-dung-EventBridge-de-schedule/image-004.png)
 
-Ở Trusted entity type, chọn Custom trust policy, dán policy dưới đây vào
+Ở **Trusted entity type**, chọn **Custom trust policy**, dán policy dưới đây vào
 
 ```json
 {
@@ -70,51 +66,51 @@ IAM → Roles → Create role
 }
 ```
 
-EventBridge Scheduler cần execution role để assume role và gọi target service thay cho con người nên Trust principal phải là scheduler.amazonaws.com.
+EventBridge Scheduler cần execution role để assume role và gọi target service thay cho con người nên **Trust principal** phải là `scheduler.amazonaws.com`.
 
-Rồi nhấn Next.
+Rồi nhấn **Next**.
 
 ![](/images/4-Workshop/4.18.4-Su-dung-EventBridge-de-schedule/image-005.png)
 
-ATTACH POLICY
+#### Attach policy
 
-Ở bước Add permissions, tìm và chọn policy AllowStartGlueWorkflow.
+Ở bước **Add permissions**, tìm và chọn policy `AllowStartGlueWorkflow`.
 
-Sau đó nhấn Next.
+Sau đó nhấn **Next**.
 
 ![](/images/4-Workshop/4.18.4-Su-dung-EventBridge-de-schedule/image-006.png)
 
-- Đặt role name EventBridgeSchedulerStartGlueWorkflowRole
+- Đặt role name **EventBridgeSchedulerStartGlueWorkflowRole**
 
-Kiểm tra lại các thông tin, sau đó nhấn Create role.
+Kiểm tra lại các thông tin, sau đó nhấn **Create role**.
 
 ![](/images/4-Workshop/4.18.4-Su-dung-EventBridge-de-schedule/image-007.png)
 
 #### Tạo EventBridge Schedule
 
-Truy cập AWS Management Console, tìm kiếm và chọn dịch vụ Amazon EventBridge
+Truy cập **AWS Management Console**, tìm kiếm và chọn dịch vụ **Amazon EventBridge**.
 
 ![](/images/4-Workshop/4.18.4-Su-dung-EventBridge-de-schedule/image-008.png)
 
-Trong menu bên trái chọn Schedules, sau đó nhấn Create schedule
+Trong menu bên trái chọn **Schedules**, sau đó nhấn **Create schedule**.
 
 ![](/images/4-Workshop/4.18.4-Su-dung-EventBridge-de-schedule/image-009.png)
 
-Trong bước Specify schedule detail, cấu hình:
+Trong bước **Specify schedule detail**, cấu hình:
 
-- Schedule name: schedule-ecommerce-glue-workflow
+- Schedule name: **schedule-ecommerce-glue-workflow**
 
-- Schedule pattern: Recurring schedule
+- Schedule pattern: **Recurring schedule**
 
-- Time zone: Asia/Saigon
+- Time zone: **Asia/Saigon**
 
 ![](/images/4-Workshop/4.18.4-Su-dung-EventBridge-de-schedule/image-010.png)
 
-- Schedule type: Cron-based schedule
+- Schedule type: **Cron-based schedule**
 
-- Cron expression: cron(0 09 * * ? *)
+- Cron expression: **cron(0 09 * * ? *)**
 
-- Flexible time window: OFF
+- Flexible time window: **OFF**
 
 ![](/images/4-Workshop/4.18.4-Su-dung-EventBridge-de-schedule/image-011.png)
 
@@ -122,13 +118,13 @@ EventBridge Scheduler hỗ trợ recurring schedule bằng cron/rate expression 
 
 #### Chọn target
 
-Ở bước Select target, cấu hình như sau:
+Ở bước **Select target**, cấu hình như sau:
 
-- Target API: All APIs
+- Target API: **All APIs**
 
-- Chọn service: AWS Glue
+- Chọn service: **AWS Glue**
 
-- Chọn API: StartWorkflowRun
+- Chọn API: **StartWorkflowRun**
 
 - Ở ô input dán script JSON:
 
@@ -138,26 +134,24 @@ EventBridge Scheduler hỗ trợ recurring schedule bằng cron/rate expression 
 }
 ```
 
-Sau đó nhấn Next
+Sau đó nhấn **Next**.
 
 ![](/images/4-Workshop/4.18.4-Su-dung-EventBridge-de-schedule/image-012.png)
 
 #### Settings
 
-- Enable schedule: Enable
+- Enable schedule: **Enable**
 
-- Action after schedule completion: NONE
+- Action after schedule completion: **NONE**
 
-- Execution role:  Use existing role
+- Execution role:  **Use existing role**
 
-```sql
-Select an existing role: EventBridgeSchedulerStartGlueWorkflowRole
-```
+- Select an existing role: **EventBridgeSchedulerStartGlueWorkflowRole**
 
-Sau đó nhấn Next
+Sau đó nhấn **Next**.
 
 ![](/images/4-Workshop/4.18.4-Su-dung-EventBridge-de-schedule/image-013.png)
 
-Sau đó Review lại và nhấn Create schedule. Schedule đã được tạo thành công.
+Sau đó Review lại và nhấn **Create schedule**. Schedule đã được tạo thành công.
 
 ![](/images/4-Workshop/4.18.4-Su-dung-EventBridge-de-schedule/image-014.png)
