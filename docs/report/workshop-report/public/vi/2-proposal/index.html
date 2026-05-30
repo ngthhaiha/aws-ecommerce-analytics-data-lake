@@ -1,0 +1,2964 @@
+<!DOCTYPE html>
+<html lang="vi" class="js csstransforms3d">
+  <head><script src="/aws-ecommerce-analytics-data-lake/livereload.js?mindelay=10&amp;v=2&amp;port=63626&amp;path=aws-ecommerce-analytics-data-lake/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.162.0">
+    <meta
+  name="description"
+  content=""
+/>
+<meta name="author" content="thienlh@thienlu.com" />
+
+    <link rel="icon" href="/aws-ecommerce-analytics-data-lake/images/favicon.png" type="image/png">
+
+    <title>Bản đề xuất :: Báo cáo thực tập</title>
+
+    
+    <link href="/aws-ecommerce-analytics-data-lake/css/nucleus.css?1780070717" rel="stylesheet">
+    <link href="/aws-ecommerce-analytics-data-lake/css/fontawesome-all.min.css?1780070717" rel="stylesheet">
+    <link href="/aws-ecommerce-analytics-data-lake/css/hybrid.css?1780070717" rel="stylesheet">
+    <link href="/aws-ecommerce-analytics-data-lake/css/featherlight.min.css?1780070717" rel="stylesheet">
+    <link href="/aws-ecommerce-analytics-data-lake/css/perfect-scrollbar.min.css?1780070717" rel="stylesheet">
+    <link href="/aws-ecommerce-analytics-data-lake/css/auto-complete.css?1780070717" rel="stylesheet">
+    <link href="/aws-ecommerce-analytics-data-lake/css/atom-one-dark-reasonable.css?1780070717" rel="stylesheet">
+    <link href="/aws-ecommerce-analytics-data-lake/css/theme.css?1780070717" rel="stylesheet">
+    <link href="/aws-ecommerce-analytics-data-lake/css/hugo-theme.css?1780070717" rel="stylesheet">
+    
+    <link href="/aws-ecommerce-analytics-data-lake/css/theme-workshop.css?1780070717" rel="stylesheet">
+    
+    
+
+    <script src="/aws-ecommerce-analytics-data-lake/js/jquery-3.3.1.min.js?1780070717"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+  </head>
+  <body class="" data-url="/aws-ecommerce-analytics-data-lake/vi/2-proposal/">
+    <nav
+  id="sidebar"
+  class="showVisitedLinks"
+>
+   
+  <div id="header-wrapper">
+    <div id="header"><a id="logo" href="/">
+
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="30%"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#fff;fill-rule:evenodd;}</style></defs><title>AWS-Logo_White-Color</title><path class="cls-1" d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"></path><path class="cls-2" d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"></path><path class="cls-2" d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"></path></svg>
+
+</a>
+</div>
+     <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/aws-ecommerce-analytics-data-lake/js/lunr.min.js?1780070717"></script>
+<script type="text/javascript" src="/aws-ecommerce-analytics-data-lake/js/auto-complete.js?1780070717"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/localhost:63626\/aws-ecommerce-analytics-data-lake\/\/vi";
+    
+</script>
+<script type="text/javascript" src="/aws-ecommerce-analytics-data-lake/js/search.js?1780070717"></script>
+ 
+  </div>
+
+  <div class="highlightable">
+    <ul class="topics">
+               
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/1-worklog/"
+  title="Nhật ký công việc"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/1-worklog/">
+     <b> 1. </b> Nhật ký công việc 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/1-worklog/1.1-week1/"
+  title="Worklog Tuần 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/1-worklog/1.1-week1/">
+     <b> 1.1. </b> Worklog Tuần 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/1-worklog/1.2-week2/"
+  title="Worklog Tuần 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/1-worklog/1.2-week2/">
+     <b> 1.2. </b> Worklog Tuần 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/1-worklog/1.3-week3/"
+  title="Worklog Tuần 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/1-worklog/1.3-week3/">
+     <b> 1.3. </b> Worklog Tuần 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/1-worklog/1.4-week4/"
+  title="Worklog Tuần 4"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/1-worklog/1.4-week4/">
+     <b> 1.4. </b> Worklog Tuần 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/1-worklog/1.5-week5/"
+  title="Worklog Tuần 5"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/1-worklog/1.5-week5/">
+     <b> 1.5. </b> Worklog Tuần 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/1-worklog/1.6-week6/"
+  title="Worklog Tuần 6"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/1-worklog/1.6-week6/">
+     <b> 1.6. </b> Worklog Tuần 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/1-worklog/1.7-week7/"
+  title="Worklog Tuần 7"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/1-worklog/1.7-week7/">
+     <b> 1.7. </b> Worklog Tuần 7 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/1-worklog/1.8-week8/"
+  title="Worklog Tuần 8"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/1-worklog/1.8-week8/">
+     <b> 1.8. </b> Worklog Tuần 8 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/1-worklog/1.9-week9/"
+  title="Worklog Tuần 9"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/1-worklog/1.9-week9/">
+     <b> 1.9. </b> Worklog Tuần 9 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/1-worklog/1.10-week10/"
+  title="Worklog Tuần 10"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/1-worklog/1.10-week10/">
+     <b> 1.10. </b> Worklog Tuần 10 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/1-worklog/1.11-week11/"
+  title="Worklog Tuần 11"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/1-worklog/1.11-week11/">
+     <b> 1.11. </b> Worklog Tuần 11 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/1-worklog/1.12-week12/"
+  title="Worklog Tuần 12"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/1-worklog/1.12-week12/">
+     <b> 1.12 </b> Worklog Tuần 12 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/2-proposal/"
+  title="Bản đề xuất"
+  class="dd-item 
+        
+        active
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/2-proposal/">
+     <b> 2. </b> Bản đề xuất 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/3-blogstranslated/"
+  title="Các bài blogs đã dịch"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/3-blogstranslated/">
+     <b> 3. </b> Các bài blogs đã dịch 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/3-blogstranslated/3.1-blog1/"
+  title="Blog 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/3-blogstranslated/3.1-blog1/">
+     <b> 3.1. </b> Blog 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/3-blogstranslated/3.2-blog2/"
+  title="Blog 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/3-blogstranslated/3.2-blog2/">
+     <b> 3.2. </b> Blog 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/3-blogstranslated/3.3-blog3/"
+  title="Blog 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/3-blogstranslated/3.3-blog3/">
+     <b> 3.3. </b> Blog 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/3-blogstranslated/3.4-blog4/"
+  title="Blog 4"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/3-blogstranslated/3.4-blog4/">
+     <b> 3.4. </b> Blog 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/3-blogstranslated/3.5-blog5/"
+  title="Blog 5"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/3-blogstranslated/3.5-blog5/">
+     <b> 3.6. </b> Blog 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/3-blogstranslated/3.6-blog6/"
+  title="Blog 6"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/3-blogstranslated/3.6-blog6/">
+     <b> 3.6. </b> Blog 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/4-eventparticipated/"
+  title="Các events đã tham gia"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/4-eventparticipated/">
+     <b> 4. </b> Các events đã tham gia 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/4-eventparticipated/4.1-event1/"
+  title="Event 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/4-eventparticipated/4.1-event1/">
+     <b> 4.1. </b> Event 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/4-eventparticipated/4.2-event2/"
+  title="Event 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/4-eventparticipated/4.2-event2/">
+     <b> 4.2. </b> Event 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/4-eventparticipated/4.3-event3/"
+  title="Event 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/4-eventparticipated/4.3-event3/">
+     <b> 4.2. </b> Event 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/4-eventparticipated/4.4-event4/"
+  title="Event 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/4-eventparticipated/4.4-event4/">
+     <b> 4.2. </b> Event 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/"
+  title="WORKSHOP XÂY DỰNG E-COMMERCE ANALYTICS DATA LAKE TRÊN AWS THEO HƯỚNG SERVERLESS"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/">
+     <b> 5. </b> Workshop 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.1-gioi-thieu/"
+  title="XÂY DỰNG E-COMMERCE ANALYTICS DATA LAKE TRÊN AWS THEO HƯỚNG SERVERLESS"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.1-gioi-thieu/">
+    5.1. Giới thiệu 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.2-kaggle-dataset-preprocessing-o-local/"
+  title="5.2. Kaggle Dataset preprocessing ở local"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.2-kaggle-dataset-preprocessing-o-local/">
+    5.2. Kaggle Dataset preprocessing ở local 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.3-tao-s3-raw-zone/"
+  title="5.3. Tạo S3 Raw Zone"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.3-tao-s3-raw-zone/">
+    5.3. Tạo S3 Raw Zone 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.4-tao-glue-data-catalog-cho-raw-data/"
+  title="5.4. Tạo Glue Data Catalog cho raw data"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.4-tao-glue-data-catalog-cho-raw-data/">
+    5.4. Tạo Glue Data Catalog cho raw data 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.4-tao-glue-data-catalog-cho-raw-data/5.4.1-tao-iam-role-cho-aws-glue/"
+  title="5.4.1. Tạo IAM Role cho AWS Glue"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.4-tao-glue-data-catalog-cho-raw-data/5.4.1-tao-iam-role-cho-aws-glue/">
+    5.4.1. Tạo IAM Role cho AWS Glue 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.4-tao-glue-data-catalog-cho-raw-data/5.4.2-tao-glue-database/"
+  title="5.4.2. Tạo Glue Database"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.4-tao-glue-data-catalog-cho-raw-data/5.4.2-tao-glue-database/">
+    5.4.2. Tạo Glue Database 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.5-tao-glue-crawler-cho-raw-data/"
+  title="5.5. Tạo Glue Crawler cho Raw Data"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.5-tao-glue-crawler-cho-raw-data/">
+    5.5. Tạo Glue Crawler cho Raw Data 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.6-cau-hinh-athena-query-result-location/"
+  title="5.6. Cấu hình Athena query result location"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.6-cau-hinh-athena-query-result-location/">
+    5.6. Cấu hình Athena query result location 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.7-glue-etl-job/"
+  title="5.7. Glue ETL Job"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.7-glue-etl-job/">
+    5.7. Glue ETL Job 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.7-glue-etl-job/5.7.1-tao-glue-etl-job/"
+  title="5.7.1. Tạo Glue ETL Job"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.7-glue-etl-job/5.7.1-tao-glue-etl-job/">
+    5.7.1. Tạo Glue ETL Job 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.7-glue-etl-job/5.7.2-kiem-tra-output-tren-amazon-s3/"
+  title="5.7.2. Kiểm tra output trên Amazon S3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.7-glue-etl-job/5.7.2-kiem-tra-output-tren-amazon-s3/">
+    5.7.2. Kiểm tra output trên Amazon S3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.8-tao-glue-data-catalog-cho-curated-data/"
+  title="5.8. Tạo Glue Data Catalog cho Curated Data"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.8-tao-glue-data-catalog-cho-curated-data/">
+    5.8. Tạo Glue Data Catalog cho Curated Data 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.8-tao-glue-data-catalog-cho-curated-data/5.8.1-tao-glue-database-ecommerce-curated/"
+  title="5.8.1. Tạo Glue Database ecommerce_curated"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.8-tao-glue-data-catalog-cho-curated-data/5.8.1-tao-glue-database-ecommerce-curated/">
+    5.8.1. Tạo Glue Database ecommerce_curated 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.8-tao-glue-data-catalog-cho-curated-data/5.8.2-tao-glue-crawler-cho-du-lieu-curated-parquet/"
+  title="5.8.2. Tạo Glue Crawler cho dữ liệu Curated Parquet"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.8-tao-glue-data-catalog-cho-curated-data/5.8.2-tao-glue-crawler-cho-du-lieu-curated-parquet/">
+    5.8.2. Tạo Glue Crawler cho dữ liệu Curated Parquet 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.8-tao-glue-data-catalog-cho-curated-data/5.8.3-chay-glue-crawler/"
+  title="5.8.3. Chạy Glue Crawler"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.8-tao-glue-data-catalog-cho-curated-data/5.8.3-chay-glue-crawler/">
+    5.8.3. Chạy Glue Crawler 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.8-tao-glue-data-catalog-cho-curated-data/5.8.4-query-curated-tables-trong-athena/"
+  title="5.8.4. Query Curated Tables trong Athena"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.8-tao-glue-data-catalog-cho-curated-data/5.8.4-query-curated-tables-trong-athena/">
+    5.8.4. Query Curated Tables trong Athena 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.9-validate-curated-data/"
+  title="5.9. Validate curated data"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.9-validate-curated-data/">
+    5.9. Validate curated data 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.10-tao-athena-views-cho-analytics/"
+  title="5.10. Tạo Athena Views cho analytics"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.10-tao-athena-views-cho-analytics/">
+    5.10. Tạo Athena Views cho analytics 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.11-ket-noi-quicksight-voi-athena/"
+  title="5.11. Kết nối QuickSight với Athena"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.11-ket-noi-quicksight-voi-athena/">
+    5.11. Kết nối QuickSight với Athena 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.12-dashboard-1-executive-overview/"
+  title="5.12. Dashboard 1: Executive Overview"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.12-dashboard-1-executive-overview/">
+    5.12. Dashboard 1: Executive Overview 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.13-dashboard-2-funnel-analytics/"
+  title="5.13. Dashboard 2: Funnel Analytics"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.13-dashboard-2-funnel-analytics/">
+    5.13. Dashboard 2: Funnel Analytics 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.14-dashboard-3-marketing-performance/"
+  title="5.14. Dashboard 3: Marketing Performance"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.14-dashboard-3-marketing-performance/">
+    5.14. Dashboard 3: Marketing Performance 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.15-dashboard-4-product-analytics/"
+  title="5.15. Dashboard 4: Product Analytics"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.15-dashboard-4-product-analytics/">
+    5.15. Dashboard 4: Product Analytics 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.16-dashboard-5-ab-testing/"
+  title="5.16. Dashboard 5: A/B Testing"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.16-dashboard-5-ab-testing/">
+    5.16. Dashboard 5: A/B Testing 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.17-publish-dashboards/"
+  title="5.17. Publish Dashboards"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.17-publish-dashboards/">
+    5.17. Publish Dashboards 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.18-automation-and-monitoring-layer/"
+  title="5.18. Automation &amp; Monitoring Layer"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.18-automation-and-monitoring-layer/">
+    5.18. Automation &amp; Monitoring Layer 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.18-automation-and-monitoring-layer/5.18.1-tao-sns-email-notification/"
+  title="5.18.1. Tạo SNS Email Notification"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.18-automation-and-monitoring-layer/5.18.1-tao-sns-email-notification/">
+    5.18.1. Tạo SNS Email Notification 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.18-automation-and-monitoring-layer/5.18.2-tao-glue-workflow/"
+  title="5.18.2. Tạo Glue Workflow"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.18-automation-and-monitoring-layer/5.18.2-tao-glue-workflow/">
+    5.18.2. Tạo Glue Workflow 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.18-automation-and-monitoring-layer/5.18.3-kiem-tra-cloudwatch-logs-cho-glue-etl-job/"
+  title="5.18.3. Kiểm tra CloudWatch Logs cho Glue ETL Job"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.18-automation-and-monitoring-layer/5.18.3-kiem-tra-cloudwatch-logs-cho-glue-etl-job/">
+    5.18.3. Kiểm tra CloudWatch Logs cho Glue ETL Job 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.18-automation-and-monitoring-layer/5.18.4-su-dung-eventbridge-de-schedule/"
+  title="5.18.4. Sử dụng EventBridge để schedule"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.18-automation-and-monitoring-layer/5.18.4-su-dung-eventbridge-de-schedule/">
+    5.18.4. Sử dụng EventBridge để schedule 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.18-automation-and-monitoring-layer/5.18.5-kiem-tra-schedule/"
+  title="5.18.5. Kiểm tra schedule"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.18-automation-and-monitoring-layer/5.18.5-kiem-tra-schedule/">
+    5.18.5. Kiểm tra schedule 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.18-automation-and-monitoring-layer/5.18.6-eventbridge-rule-dung-de-alert-loi/"
+  title="5.18.6. EventBridge Rule dùng để alert lỗi"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/5-workshop/5.18-automation-and-monitoring-layer/5.18.6-eventbridge-rule-dung-de-alert-loi/">
+    5.18.6. EventBridge Rule dùng để alert lỗi 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/6-self-evaluation/"
+  title="Tự đánh giá"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/6-self-evaluation/">
+     <b> 6. </b> Tự đánh giá 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/aws-ecommerce-analytics-data-lake/vi/7-feedback/"
+  title="Chia sẻ, đóng góp ý kiến"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/aws-ecommerce-analytics-data-lake/vi/7-feedback/">
+     <b> 7. </b> Chia sẻ, đóng góp ý kiến 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+    </ul>
+
+     
+    <section id="shortcuts">
+      <h3>
+        More
+      </h3>
+      <ul>
+        
+        <li>
+          <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"
+            ><i class='fab fa-facebook'></i> AWS Study Group</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+     
+    <section id="prefooter">
+      <hr />
+      <ul>
+        
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+            <div class="select-style">
+              <select id="select-language" onchange="location = this.value;">
+                       
+                <option
+                  id="en"
+                  value="http://localhost:63626/aws-ecommerce-analytics-data-lake/2-proposal/"
+                >
+                  English
+                </option>
+                            
+                <option
+                  id="vi"
+                  value="http://localhost:63626/aws-ecommerce-analytics-data-lake/vi/2-proposal/"
+                  selected
+                >
+                  Tiếng Việt
+                </option>
+                   
+              </select>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="255px"
+                height="255px"
+                viewBox="0 0 255 255"
+                style="enable-background: new 0 0 255 255"
+                xml:space="preserve"
+              >
+                <g>
+                  <g id="arrow-drop-down">
+                    <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+         
+        <li>
+          <a class="padding" href="#" data-clear-history-toggle=""
+            ><i class="fas fa-history fa-fw"></i> Clear History</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+    
+    <section id="footer">
+<left>
+    <br>
+    <br>
+    <b>Last Updated</b><br>
+    <i>
+        <span id="lastUpdated" style="color:orange;"></span>
+    </i>
+
+    <script>
+        
+        const today = new Date();
+        
+        const formattedDate = today.toLocaleDateString('en-GB');
+        
+        document.getElementById('lastUpdated').textContent = formattedDate;
+    </script>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.facebook.com/groups/660548818043427" style="color:orange">First Cloud Journey </a> <br>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script></section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            <a href='/aws-ecommerce-analytics-data-lake/vi/'>Báo cáo thực tập</a> > Bản đề xuất
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#xây-dựng-e-commerce-analytics-data-lake-trên-aws-theo-hướng-serverless">XÂY DỰNG E-COMMERCE ANALYTICS DATA LAKE TRÊN AWS THEO HƯỚNG SERVERLESS</a>
+      <ul>
+        <li><a href="#1-tóm-tắt-điều-hành">1. Tóm tắt điều hành</a></li>
+        <li><a href="#2-tuyên-bố-vấn-đề">2. Tuyên bố vấn đề</a></li>
+        <li><a href="#3-kiến-trúc-giải-pháp">3. Kiến trúc giải pháp</a></li>
+        <li><a href="#4-triển-khai-kỹ-thuật">4. Triển khai kỹ thuật</a></li>
+        <li><a href="#5-lộ-trình--mốc-triển-khai">5. Lộ trình &amp; Mốc triển khai</a></li>
+        <li><a href="#6-ước-tính-ngân-sách">6. Ước tính ngân sách</a></li>
+        <li><a href="#7-đánh-giá-rủi-ro">7. Đánh giá rủi ro</a></li>
+        <li><a href="#8-kết-quả-kỳ-vọng">8. Kết quả kỳ vọng</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Bản đề xuất
+            </h1>
+          
+
+        
+
+
+
+	<h2 id="xây-dựng-e-commerce-analytics-data-lake-trên-aws-theo-hướng-serverless">XÂY DỰNG E-COMMERCE ANALYTICS DATA LAKE TRÊN AWS THEO HƯỚNG SERVERLESS</h2>
+<h3 id="1-tóm-tắt-điều-hành">1. Tóm tắt điều hành</h3>
+<p><strong>E-commerce Analytics Data Lake on AWS</strong> được xây dựng nhằm xử lý và phân tích dữ liệu thương mại điện tử theo hướng serverless trên nền tảng AWS. Giải pháp sử dụng bộ dữ liệu Marketing &amp; E-commerce từ Kaggle, bao gồm dữ liệu hành vi người dùng, dữ liệu sản phẩm và dữ liệu giao dịch.</p>
+<p>Giải pháp được thiết kế theo mô hình data lake, trong đó Amazon S3 đóng vai trò là nơi lưu trữ dữ liệu trung tâm. Dữ liệu ban đầu được đưa vào S3 Raw Zone dưới dạng CSV, sau đó được xử lý bằng AWS Glue ETL Job để làm sạch, chuẩn hóa, validate lỗi và chuyển đổi sang định dạng Parquet tại S3 Curated Zone. Amazon Athena được sử dụng để truy vấn dữ liệu và tạo semantic views phục vụ phân tích. Amazon QuickSight được dùng để xây dựng dashboard trực quan hóa các chỉ số kinh doanh quan trọng.</p>
+<p>Ngoài phần xử lý và phân tích dữ liệu, workshop còn triển khai lớp tự động hóa và giám sát pipeline. EventBridge Scheduler được sử dụng để tự động kích hoạt Glue Workflow theo lịch, trong khi EventBridge Rules và SNS Email Notification được dùng để cảnh báo khi Glue Job hoặc Glue Crawler gặp lỗi.</p>
+<p>Workshop hướng đến mục tiêu mô phỏng một pipeline phân tích dữ liệu thương mại điện tử hoàn chỉnh, từ dữ liệu thô đến dashboard business.</p>
+<h3 id="2-tuyên-bố-vấn-đề">2. Tuyên bố vấn đề</h3>
+<p><em><strong>Vấn đề hiện tại</strong></em></p>
+<p>Trong thương mại điện tử, dữ liệu thường phát sinh từ nhiều nguồn khác nhau như sự kiện người dùng, chiến dịch marketing, thông tin sản phẩm và giao dịch mua hàng. Nếu các dữ liệu này chỉ được lưu ở dạng CSV thô, việc phân tích sẽ gặp nhiều khó khăn:</p>
+<ul>
+<li>Dữ liệu phân tán theo nhiều file và nhiều domain khác nhau.</li>
+<li>Dữ liệu raw có thể chứa giá trị thiếu, sai kiểu dữ liệu hoặc định dạng không nhất quán.</li>
+<li>Các giá trị như traffic source có thể bị viết hoa/thường không đồng nhất.</li>
+<li>Dữ liệu giao dịch có thể chứa bản ghi lỗi, ví dụ thiếu product_id, thiếu gross_revenue hoặc doanh thu âm không được đánh dấu là refund.</li>
+<li>Việc query trực tiếp CSV raw bằng Athena có thể tốn chi phí và hiệu năng thấp hơn so với dữ liệu Parquet.</li>
+<li>Dashboard sẽ khó xây dựng nếu toàn bộ logic business phải viết trực tiếp trong QuickSight.</li>
+<li>Pipeline thủ công dễ gây sai sót nếu phải chạy crawler, ETL job và crawler curated từng bước bằng tay.</li>
+</ul>
+<p>Do đó, cần có một pipeline dữ liệu có khả năng lưu trữ, xử lý, chuẩn hóa, phân tích, trực quan hóa và tự động hóa theo quy trình rõ ràng.</p>
+<p><em><strong>Giải pháp</strong></em></p>
+<p>Giải pháp đề xuất là xây dựng một E-commerce Analytics Data Lake trên AWS theo hướng serverless.</p>
+<p>Pipeline sử dụng Amazon S3 làm data lake, chia dữ liệu thành các vùng:</p>
+<ul>
+<li>Raw Zone: lưu dữ liệu CSV ban đầu.</li>
+<li>Curated Zone: lưu dữ liệu đã xử lý dưới định dạng Parquet.</li>
+<li>Error Zone: lưu các bản ghi giao dịch không hợp lệ.</li>
+<li>Athena Results: lưu kết quả truy vấn của Athena.</li>
+</ul>
+<p>AWS Glue Crawler được sử dụng để tự động quét dữ liệu trong S3 và tạo metadata trong AWS Glue Data Catalog. AWS Glue ETL Job xử lý dữ liệu bằng PySpark, thực hiện cast kiểu dữ liệu, parse timestamp, chuẩn hóa text, validate transaction lỗi, ghi dữ liệu hợp lệ sang curated zone và ghi dữ liệu lỗi sang error zone.</p>
+<p>Amazon Athena được sử dụng để kiểm tra dữ liệu raw/curated và tạo các business views. Các view này đóng vai trò semantic layer để phục vụ Amazon QuickSight. Amazon QuickSight trực quan hóa dữ liệu thông qua các dashboard như Executive Overview, Funnel Analytics, Marketing Performance, Product Analytics và A/B Testing.</p>
+<p>Để tự động hóa pipeline, EventBridge Scheduler được dùng để kích hoạt Glue Workflow theo lịch. Glue Workflow điều phối thứ tự chạy gồm Raw Crawler → Glue ETL Job → Curated Crawler. EventBridge Rules được dùng để bắt lỗi Glue Job hoặc Glue Crawler và gửi thông báo qua SNS Email Notification.</p>
+<p><em><strong>Lợi ích và hoàn vốn đầu tư (ROI)</strong></em></p>
+<p>Giải pháp mang lại các lợi ích chính:</p>
+<ul>
+<li>Tự động hóa quy trình xử lý dữ liệu từ raw đến curated.</li>
+<li>Giảm thao tác thủ công khi chạy crawler và ETL job.</li>
+<li>Tối ưu truy vấn bằng cách chuyển dữ liệu từ CSV sang Parquet.</li>
+<li>Tổ chức dữ liệu theo mô hình data lake rõ ràng.</li>
+<li>Tách dữ liệu lỗi sang Error Zone để dễ kiểm tra và debug.</li>
+<li>Tạo semantic layer bằng Athena Views giúp dashboard dễ sử dụng hơn.</li>
+<li>Hỗ trợ ra quyết định business thông qua QuickSight dashboard.</li>
+<li>Có cơ chế cảnh báo lỗi pipeline bằng EventBridge Rules và SNS.</li>
+<li>Phù hợp cho môi trường học tập, demo workshop và portfolio AWS Data Engineering.</li>
+</ul>
+<p>Về ROI, giải pháp giúp giảm thời gian thao tác thủ công, giảm thời gian chuẩn bị dữ liệu cho dashboard và tạo nền tảng có thể mở rộng cho các bài toán phân tích nâng cao như customer segmentation, recommendation hoặc churn analysis trong tương lai.</p>
+<h3 id="3-kiến-trúc-giải-pháp">3. Kiến trúc giải pháp</h3>
+<p>Giải pháp sử dụng kiến trúc AWS Serverless Data Analytics, trong đó các thành phần chính bao gồm Amazon S3, AWS Glue, Amazon Athena, Amazon QuickSight, EventBridge, CloudWatch Logs, SNS và IAM.</p>
+<p>Luồng kiến trúc tổng thể:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Kaggle Marketing &amp; E-commerce Dataset
+</span></span><span style="display:flex;"><span>        |
+</span></span><span style="display:flex;"><span>        v
+</span></span><span style="display:flex;"><span>Local Preprocessing
+</span></span><span style="display:flex;"><span>Rename columns only
+</span></span><span style="display:flex;"><span>        |
+</span></span><span style="display:flex;"><span>        v
+</span></span><span style="display:flex;"><span>Amazon S3 Raw Zone
+</span></span><span style="display:flex;"><span>raw/events/
+</span></span><span style="display:flex;"><span>raw/products/
+</span></span><span style="display:flex;"><span>raw/transactions/
+</span></span><span style="display:flex;"><span>        |
+</span></span><span style="display:flex;"><span>        v
+</span></span><span style="display:flex;"><span>AWS Glue Crawler Raw
+</span></span><span style="display:flex;"><span>Raw metadata catalog
+</span></span><span style="display:flex;"><span>        |
+</span></span><span style="display:flex;"><span>        v
+</span></span><span style="display:flex;"><span>Amazon Athena Raw Validation
+</span></span><span style="display:flex;"><span>Schema checks, null checks, duplicates, abnormal values
+</span></span><span style="display:flex;"><span>        |
+</span></span><span style="display:flex;"><span>        v
+</span></span><span style="display:flex;"><span>AWS Glue Batch ETL Job
+</span></span><span style="display:flex;"><span>Clean, cast, validate, enrich, partition, convert to Parquet
+</span></span><span style="display:flex;"><span>        |
+</span></span><span style="display:flex;"><span>        v
+</span></span><span style="display:flex;"><span>Amazon S3 Curated Zone + Error Zone
+</span></span><span style="display:flex;"><span>curated/fact_events/
+</span></span><span style="display:flex;"><span>curated/dim_products/
+</span></span><span style="display:flex;"><span>curated/fact_transactions/
+</span></span><span style="display:flex;"><span>error/transactions/
+</span></span><span style="display:flex;"><span>        |
+</span></span><span style="display:flex;"><span>        v
+</span></span><span style="display:flex;"><span>AWS Glue Crawler Curated
+</span></span><span style="display:flex;"><span>Curated metadata catalog
+</span></span><span style="display:flex;"><span>        |
+</span></span><span style="display:flex;"><span>        v
+</span></span><span style="display:flex;"><span>Amazon Athena Semantic Views
+</span></span><span style="display:flex;"><span>Business-ready SQL views
+</span></span><span style="display:flex;"><span>        |
+</span></span><span style="display:flex;"><span>        v
+</span></span><span style="display:flex;"><span>Amazon QuickSight Dashboards
+</span></span><span style="display:flex;"><span>Executive, Funnel, Marketing, Product, A/B Testing
+</span></span><span style="display:flex;"><span>        |
+</span></span><span style="display:flex;"><span>        v
+</span></span><span style="display:flex;"><span>Automation &amp; Monitoring
+</span></span><span style="display:flex;"><span>EventBridge Scheduler + Glue Workflow + EventBridge Rules + CloudWatch Logs + SNS Alert
+</span></span></code></pre></div><h4 id="dịch-vụ-aws-sử-dụng">Dịch vụ AWS sử dụng</h4>
+<ul>
+<li>
+<p><strong>Amazon S3:</strong>
+Được sử dụng làm data lake chính để lưu trữ dữ liệu raw, dữ liệu curated, dữ liệu lỗi và kết quả truy vấn Athena.</p>
+</li>
+<li>
+<p><strong>AWS Glue Data Catalog:</strong>
+Lưu metadata của raw tables và curated tables để Athena có thể truy vấn dữ liệu trên S3.</p>
+</li>
+<li>
+<p><strong>AWS Glue Crawler:</strong>
+Tự động quét dữ liệu trong S3 và tạo bảng metadata. Project sử dụng Raw Crawler và Curated Crawler.</p>
+</li>
+<li>
+<p><strong>AWS Glue ETL Job:</strong>
+Xử lý dữ liệu CSV từ raw zone, làm sạch, chuẩn hóa, validate và ghi dữ liệu Parquet sang curated zone.</p>
+</li>
+<li>
+<p><strong>AWS Glue Workflow:</strong>
+Điều phối luồng chạy Raw Crawler → Glue ETL Job → Curated Crawler theo thứ tự.</p>
+</li>
+<li>
+<p><strong>Amazon Athena:</strong>
+Truy vấn dữ liệu trực tiếp trên S3 bằng SQL, validate dữ liệu và tạo business views cho dashboard.</p>
+</li>
+<li>
+<p><strong>Amazon QuickSight:</strong>
+Kết nối với Athena để xây dựng dashboard phân tích dữ liệu thương mại điện tử.</p>
+</li>
+<li>
+<p><strong>Amazon EventBridge Scheduler:</strong>
+Tự động kích hoạt Glue Workflow theo lịch thông qua API StartWorkflowRun.</p>
+</li>
+<li>
+<p><strong>Amazon EventBridge Rules:</strong>
+Bắt các event lỗi từ Glue Job và Glue Crawler.</p>
+</li>
+<li>
+<p><strong>Amazon SNS:</strong>
+Gửi email notification khi pipeline gặp lỗi.</p>
+</li>
+<li>
+<p><strong>Amazon CloudWatch Logs:</strong>
+Lưu log của Glue ETL Job để kiểm tra và debug.</p>
+</li>
+<li>
+<p><strong>AWS IAM:</strong>
+Quản lý quyền truy cập cho Glue, EventBridge Scheduler và các service liên quan.</p>
+</li>
+</ul>
+<h4 id="thiết-kế-thành-phần">Thiết kế thành phần</h4>
+<ul>
+<li>
+<p><strong>Data Source:</strong>
+Bộ dữ liệu Marketing &amp; E-commerce từ Kaggle, bao gồm events.csv, products.csv và transactions.csv.</p>
+</li>
+<li>
+<p><strong>Local Preprocessing:</strong>
+Kiểm tra dữ liệu ban đầu và đổi tên một số cột để dễ xử lý hơn, ví dụ timestamp thành event_timestamp hoặc transaction_timestamp.</p>
+</li>
+<li>
+<p><strong>S3 Raw Zone:</strong>
+Lưu dữ liệu CSV ban đầu theo từng domain: events, products và transactions.</p>
+</li>
+<li>
+<p><strong>Raw Glue Crawler:</strong>
+Quét dữ liệu raw và tạo các bảng metadata trong database ecommerce_raw.</p>
+</li>
+<li>
+<p><strong>Athena Raw Validation:</strong>
+Kiểm tra schema, số dòng, event type, category, quantity, null values và abnormal values.</p>
+</li>
+<li>
+<p><strong>Glue ETL Job:</strong>
+Làm sạch dữ liệu, chuẩn hóa kiểu dữ liệu, validate transaction lỗi, tạo cột thời gian, ghi dữ liệu Parquet và partition theo year/month/day.</p>
+</li>
+<li>
+<p><strong>S3 Curated Zone:</strong>
+Lưu dữ liệu đã xử lý gồm fact_events, dim_products và fact_transactions.</p>
+</li>
+<li>
+<p><strong>Error Zone:</strong>
+Lưu các transaction không hợp lệ để kiểm tra sau.</p>
+</li>
+<li>
+<p><strong>Curated Glue Crawler:</strong>
+Quét dữ liệu curated và tạo các bảng metadata trong database ecommerce_curated.</p>
+</li>
+<li>
+<p><strong>Athena Semantic Views:</strong>
+Tạo các view phục vụ dashboard như executive overview, funnel, marketing, product và A/B testing.</p>
+</li>
+<li>
+<p><strong>QuickSight Dashboards:</strong>
+Trực quan hóa dữ liệu theo nhiều góc nhìn business.</p>
+</li>
+<li>
+<p><strong>Automation &amp; Monitoring:</strong>
+EventBridge Scheduler chạy workflow theo lịch, EventBridge Rules bắt lỗi, SNS gửi email và CloudWatch Logs hỗ trợ debug.</p>
+</li>
+</ul>
+<h3 id="4-triển-khai-kỹ-thuật">4. Triển khai kỹ thuật</h3>
+<h4 id="các-giai-đoạn-triển-khai">Các giai đoạn triển khai</h4>
+<p>Project được triển khai theo các giai đoạn chính sau:</p>
+<p><strong>Giai đoạn 1: Khảo sát dữ liệu và thiết kế kiến trúc</strong>
+Nghiên cứu dataset từ Kaggle, xác định các file dữ liệu chính, phân tích schema, xác định các bảng fact/dimension và thiết kế kiến trúc data lake trên AWS.</p>
+<p><strong>Giai đoạn 2: Xây dựng S3 Data Lake</strong>
+Tạo S3 bucket và tổ chức thư mục theo các zone: raw, curated, error và athena-results. Upload dữ liệu CSV sau local preprocessing vào đúng thư mục trong Raw Zone.</p>
+<p><strong>Giai đoạn 3: Tạo Glue Data Catalog cho Raw Data</strong>
+Tạo IAM Role cho AWS Glue, tạo Glue Database ecommerce_raw và tạo Raw Crawler để crawl dữ liệu CSV trong Raw Zone.</p>
+<p><strong>Giai đoạn 4: Validate dữ liệu raw bằng Athena</strong>
+Cấu hình Athena query result location, query thử dữ liệu raw và chạy các câu query kiểm tra dữ liệu như số dòng, event type, product category và quantity distribution.</p>
+<p><strong>Giai đoạn 5: Phát triển Glue ETL Job</strong>
+Viết Glue ETL script bằng PySpark để xử lý dữ liệu events, products và transactions. ETL Job thực hiện clean, cast, validate, partition và chuyển đổi dữ liệu sang Parquet.</p>
+<p><strong>Giai đoạn 6: Tạo Glue Data Catalog cho Curated Data</strong>
+Tạo Glue Database ecommerce_curated, tạo Curated Crawler và crawl dữ liệu Parquet trong Curated Zone.</p>
+<p><strong>Giai đoạn 7: Validate dữ liệu curated</strong>
+Dùng Athena để kiểm tra dữ liệu sau ETL, bao gồm tổng số dòng, dữ liệu refund, transaction lỗi, null values và schema curated.</p>
+<p><strong>Giai đoạn 8: Tạo Athena Views</strong>
+Tạo các business views phục vụ dashboard như vw_executive_overview, vw_daily_event_funnel, vw_traffic_source_performance, vw_product_revenue và vw_ab_testing_summary.</p>
+<p><strong>Giai đoạn 9: Xây dựng QuickSight Dashboards</strong>
+Kết nối QuickSight với Athena bằng Direct Query và xây dựng các dashboard phân tích business.</p>
+<p><strong>Giai đoạn 10: Automation &amp; Monitoring</strong>
+Tạo Glue Workflow, EventBridge Scheduler, EventBridge Rules, SNS Email Notification và kiểm tra CloudWatch Logs cho Glue ETL Job.</p>
+<h4 id="yêu-cầu-kỹ-thuật">Yêu cầu kỹ thuật</h4>
+<p><strong>Dữ liệu đầu vào:</strong></p>
+<ul>
+<li>events.csv</li>
+<li>products.csv</li>
+<li>transactions.csv</li>
+</ul>
+<p><strong>Hạ tầng AWS:</strong></p>
+<ul>
+<li>Amazon S3 bucket cho data lake.</li>
+<li>AWS Glue Data Catalog cho raw và curated database.</li>
+<li>AWS Glue Crawlers cho raw zone và curated zone.</li>
+<li>AWS Glue ETL Job sử dụng PySpark.</li>
+<li>Amazon Athena để query dữ liệu.</li>
+<li>Amazon QuickSight để trực quan hóa.</li>
+<li>EventBridge Scheduler để chạy workflow theo lịch.</li>
+<li>EventBridge Rules và SNS để cảnh báo lỗi.</li>
+<li>CloudWatch Logs để theo dõi log ETL.</li>
+</ul>
+<p><strong>Quyền truy cập:</strong></p>
+<ul>
+<li>IAM Role cho AWS Glue với quyền AWSGlueServiceRole và quyền truy cập S3.</li>
+<li>IAM Role cho EventBridge Scheduler với quyền glue:StartWorkflowRun.</li>
+<li>SNS subscription email đã được confirm.</li>
+</ul>
+<p><strong>Yêu cầu xử lý dữ liệu:</strong></p>
+<ul>
+<li>Parse timestamp.</li>
+<li>Cast kiểu dữ liệu.</li>
+<li>Chuẩn hóa traffic_source.</li>
+<li>Xử lý null device_type.</li>
+<li>Cast is_premium và is_refunded sang boolean.</li>
+<li>Validate transaction lỗi.</li>
+<li>Ghi Parquet.</li>
+<li>Partition fact_events và fact_transactions theo year/month/day.</li>
+<li>Tạo Athena Views cho QuickSight.</li>
+</ul>
+<h3 id="5-lộ-trình--mốc-triển-khai">5. Lộ trình &amp; Mốc triển khai</h3>
+<h4 id="chuẩn-bị">Chuẩn bị</h4>
+<ul>
+<li>Xác định đề tài và phạm vi project.</li>
+<li>Chọn dataset phù hợp từ Kaggle.</li>
+<li>Khảo sát schema và các vấn đề dữ liệu.</li>
+<li>Thiết kế kiến trúc tổng thể của pipeline.</li>
+<li>Chuẩn bị tài khoản AWS, S3 bucket và quyền truy cập cần thiết.</li>
+</ul>
+<h4 id="giai-đoạn-1-data-lake-foundation">Giai đoạn 1: Data Lake Foundation</h4>
+<ul>
+<li>Tạo S3 bucket.</li>
+<li>Tạo cấu trúc thư mục raw, curated, error và athena-results.</li>
+<li>Upload dữ liệu CSV lên S3 Raw Zone.</li>
+<li>Tạo Glue IAM Role.</li>
+<li>Tạo Glue Database cho raw data.</li>
+<li>Tạo và chạy Raw Crawler.</li>
+</ul>
+<h4 id="giai-đoạn-2-data-validation--etl">Giai đoạn 2: Data Validation &amp; ETL</h4>
+<ul>
+<li>Cấu hình Athena query result location.</li>
+<li>Query kiểm tra raw tables.</li>
+<li>Phát triển Glue ETL Job.</li>
+<li>Chạy Glue ETL Job.</li>
+<li>Kiểm tra output trong S3 Curated Zone và Error Zone.</li>
+<li>Tạo Glue Database và Crawler cho curated data.</li>
+<li>Validate dữ liệu curated bằng Athena.</li>
+</ul>
+<h4 id="giai-đoạn-3-analytics-layer--dashboard">Giai đoạn 3: Analytics Layer &amp; Dashboard</h4>
+<ul>
+<li>Tạo Athena Views cho analytics.</li>
+<li>Kết nối QuickSight với Athena.</li>
+<li>Tạo các calculated fields và filters.</li>
+<li>Xây dựng dashboard Executive Overview.</li>
+<li>Xây dựng dashboard Funnel Analytics.</li>
+<li>Xây dựng dashboard Marketing Performance.</li>
+<li>Xây dựng dashboard Product Analytics.</li>
+<li>Xây dựng dashboard A/B Testing.</li>
+</ul>
+<h4 id="giai-đoạn-4-automation--monitoring">Giai đoạn 4: Automation &amp; Monitoring</h4>
+<ul>
+<li>Tạo SNS Topic và email subscription.</li>
+<li>Tạo Glue Workflow.</li>
+<li>Tạo EventBridge Scheduler để start Glue Workflow.</li>
+<li>Tạo EventBridge Rules để bắt lỗi crawler/job.</li>
+<li>Kiểm tra CloudWatch Logs.</li>
+<li>Test schedule và alert.</li>
+<li>Hoàn thiện documentation và host report bằng Hugo/GitHub Pages.</li>
+</ul>
+<h3 id="6-ước-tính-ngân-sách">6. Ước tính ngân sách</h3>
+<p>Chi phí thực tế phụ thuộc vào dung lượng dữ liệu, số lần chạy Glue Job, số lần query Athena, số lượng dashboard QuickSight và thời gian sử dụng. Trong phạm vi workshop, project được triển khai ở quy mô nhỏ, chủ yếu phục vụ học tập và demo.</p>
+<p>Có thể sử dụng <strong>AWS Pricing Calculator</strong> để ước tính chi phí chính xác hơn trước khi triển khai.</p>
+<h4 id="chi-phí-hạ-tầng-dự-kiến">Chi phí hạ tầng dự kiến</h4>
+<ul>
+<li>
+<p><strong>Amazon S3:</strong>
+Dùng để lưu raw CSV, curated Parquet, error data và Athena query results. Với dung lượng dữ liệu nhỏ trong workshop, chi phí lưu trữ thấp.</p>
+</li>
+<li>
+<p><strong>AWS Glue Crawler:</strong>
+Chi phí phát sinh khi crawler chạy để crawl Raw Zone và Curated Zone.</p>
+</li>
+<li>
+<p><strong>AWS Glue ETL Job:</strong>
+Chi phí phát sinh theo thời gian chạy và số DPU sử dụng. Project chỉ chạy ETL theo lịch hoặc khi cần test, nên có thể kiểm soát chi phí.</p>
+</li>
+<li>
+<p><strong>Amazon Athena:</strong>
+Chi phí dựa trên lượng dữ liệu scan khi query. Việc chuyển dữ liệu sang Parquet và partition theo year/month/day giúp giảm lượng dữ liệu scan.</p>
+</li>
+<li>
+<p><strong>Amazon QuickSight:</strong>
+Chi phí phụ thuộc vào loại tài khoản, số lượng author/reader và chế độ sử dụng. Project sử dụng Direct Query để tránh phải quản lý refresh SPICE.</p>
+</li>
+<li>
+<p><strong>Amazon EventBridge Scheduler</strong> và <strong>EventBridge Rules:</strong>
+Chi phí thấp trong phạm vi workshop vì số lượng schedule và rule ít.</p>
+</li>
+<li>
+<p><strong>Amazon SNS:</strong>
+Chi phí thấp do chỉ gửi email notification khi pipeline gặp lỗi.</p>
+</li>
+<li>
+<p><strong>Amazon CloudWatch Logs:</strong>
+Chi phí phụ thuộc vào lượng log phát sinh từ Glue ETL Job.</p>
+</li>
+</ul>
+<h4 id="ước-tính-tổng-quan">Ước tính tổng quan</h4>
+<p>Ở quy mô workshop, chi phí có thể được kiểm soát bằng cách:</p>
+<ul>
+<li>Chạy Glue Job theo lịch hợp lý.</li>
+<li>Không chạy crawler quá nhiều lần.</li>
+<li>Dùng Parquet để giảm Athena scan.</li>
+<li>Xóa dữ liệu test không cần thiết.</li>
+<li>Theo dõi billing trong AWS Billing Dashboard.</li>
+<li>Tạo AWS Budget nếu cần cảnh báo chi phí.</li>
+</ul>
+<h3 id="7-đánh-giá-rủi-ro">7. Đánh giá rủi ro</h3>
+<h4 id="ma-trận-rủi-ro">Ma trận rủi ro</h4>
+<p><strong>Rủi ro 1: Glue ETL Job failed</strong></p>
+<ul>
+<li>Ảnh hưởng: Cao</li>
+<li>Xác suất: Trung bình</li>
+<li>Nguyên nhân: có thể do sai schema, sai kiểu dữ liệu, thiếu quyền S3 hoặc lỗi PySpark.</li>
+</ul>
+<p><strong>Rủi ro 2: Glue Crawler không nhận đúng schema</strong></p>
+<ul>
+<li>Ảnh hưởng: Trung bình</li>
+<li>Xác suất: Trung bình</li>
+<li>Nguyên nhân: có thể do dữ liệu CSV không đồng nhất, header lỗi hoặc folder S3 sai.</li>
+</ul>
+<p><strong>Rủi ro 3: Athena query lỗi hoặc scan nhiều dữ liệu</strong></p>
+<ul>
+<li>Ảnh hưởng: Trung bình</li>
+<li>Xác suất: Trung bình</li>
+<li>Nguyên nhân: có thể do table metadata chưa cập nhật, partition chưa đúng hoặc query chưa tối ưu.</li>
+</ul>
+<p><strong>Rủi ro 4: QuickSight không kết nối được Athena/S3</strong></p>
+<ul>
+<li>Ảnh hưởng: Trung bình</li>
+<li>Xác suất: Trung bình</li>
+<li>Nguyên nhân: có thể do sai region, thiếu quyền truy cập S3 hoặc chưa cấp quyền QuickSight cho Athena.</li>
+</ul>
+<p><strong>Rủi ro 5: Chi phí AWS tăng ngoài dự kiến</strong></p>
+<ul>
+<li>Ảnh hưởng: Trung bình</li>
+<li>Xác suất: Thấp đến trung bình</li>
+<li>Nguyên nhân: có thể do chạy Glue/Athena/QuickSight nhiều lần hoặc query dữ liệu raw CSV quá nhiều.</li>
+</ul>
+<p><strong>Rủi ro 6: EventBridge Scheduler hoặc alert cấu hình sai</strong></p>
+<ul>
+<li>Ảnh hưởng: Trung bình</li>
+<li>Xác suất: Trung bình</li>
+<li>Nguyên nhân: có thể do sai IAM Role, sai API target, sai input JSON hoặc SNS email chưa confirm.</li>
+</ul>
+<h4 id="chiến-lược-giảm-thiểu">Chiến lược giảm thiểu</h4>
+<p><strong>Đối với Glue ETL Job failed:</strong></p>
+<ul>
+<li>Kiểm tra CloudWatch Logs.</li>
+<li>Test script với dữ liệu nhỏ trước.</li>
+<li>Validate schema raw trước khi chạy ETL.</li>
+<li>Tách dữ liệu lỗi vào Error Zone.</li>
+</ul>
+<p><strong>Đối với Glue Crawler:</strong></p>
+<ul>
+<li>Kiểm tra đúng S3 path.</li>
+<li>Dùng prefix table rõ ràng.</li>
+<li>Chạy crawler lại sau khi ETL ghi dữ liệu mới.</li>
+</ul>
+<p><strong>Đối với Athena:</strong></p>
+<ul>
+<li>Dùng Parquet thay vì query trực tiếp CSV raw.</li>
+<li>Partition fact_events và fact_transactions theo year/month/day.</li>
+<li>Tạo Athena Views để giảm lỗi khi dùng trong QuickSight.</li>
+</ul>
+<p><strong>Đối với QuickSight:</strong></p>
+<ul>
+<li>Đảm bảo QuickSight, Athena, Glue và S3 cùng region.</li>
+<li>Cấp quyền QuickSight truy cập Athena và S3 bucket.</li>
+<li>Dùng Direct Query để dữ liệu cập nhật theo Athena views.</li>
+</ul>
+<p><strong>Đối với chi phí:</strong></p>
+<ul>
+<li>Theo dõi AWS Billing Dashboard.</li>
+<li>Hạn chế chạy Glue Job và Crawler liên tục.</li>
+<li>Xóa tài nguyên không cần thiết sau workshop.</li>
+<li>Dùng AWS Budget nếu cần.</li>
+</ul>
+<p><strong>Đối với automation và alert:</strong></p>
+<ul>
+<li>Test Glue Workflow thủ công trước.</li>
+<li>Test EventBridge Scheduler bằng cron gần thời điểm hiện tại.</li>
+<li>Kiểm tra Workflow History và Job run monitoring.</li>
+<li>Confirm SNS email subscription trước khi tạo rule alert.</li>
+</ul>
+<h4 id="kế-hoạch-dự-phòng">Kế hoạch dự phòng</h4>
+<ul>
+<li>Nếu EventBridge Scheduler lỗi, có thể chạy Glue Workflow thủ công.</li>
+<li>Nếu Glue Workflow lỗi, có thể chạy từng bước riêng: Raw Crawler → Glue ETL Job → Curated Crawler.</li>
+<li>Nếu QuickSight gặp lỗi, có thể dùng Athena query result để minh họa phân tích.</li>
+<li>Nếu chi phí vượt dự kiến, tạm dừng schedule và chỉ chạy pipeline khi cần demo.</li>
+<li>Nếu alert chưa hoạt động, kiểm tra thủ công CloudWatch Logs và Glue Job Run History.</li>
+</ul>
+<h3 id="8-kết-quả-kỳ-vọng">8. Kết quả kỳ vọng</h3>
+<p>Sau khi hoàn thành workshop, project kỳ vọng đạt được các kết quả sau:</p>
+<h4 id="kết-quả-kỹ-thuật">Kết quả kỹ thuật</h4>
+<ul>
+<li>Xây dựng được một AWS Data Lake có cấu trúc rõ ràng gồm Raw Zone, Curated Zone, Error Zone và Athena Results.</li>
+<li>Tạo được Glue Data Catalog cho raw data và curated data.</li>
+<li>Xây dựng được Glue ETL Job để xử lý dữ liệu CSV sang Parquet.</li>
+<li>Validate được dữ liệu lỗi và tách transaction không hợp lệ vào Error Zone.</li>
+<li>Tạo được Athena Views đóng vai trò semantic layer cho dashboard.</li>
+<li>Kết nối được QuickSight với Athena bằng Direct Query.</li>
+<li>Xây dựng được các dashboard phân tích business.</li>
+<li>Tạo được Glue Workflow để điều phối pipeline.</li>
+<li>Tạo được EventBridge Scheduler để tự động chạy workflow theo lịch.</li>
+<li>Tạo được EventBridge Rules và SNS Email Notification để cảnh báo lỗi.</li>
+</ul>
+<h4 id="kết-quả-phân-tích-business">Kết quả phân tích business</h4>
+<p>Project giúp trả lời các câu hỏi phân tích quan trọng:</p>
+<ul>
+<li>Doanh thu thay đổi như thế nào theo thời gian?</li>
+<li>Số lượng đơn hàng và average order value có ổn định không?</li>
+<li>Refund rate có tăng bất thường không?</li>
+<li>Người dùng rơi rụng nhiều nhất ở bước nào trong funnel?</li>
+<li>Traffic source nào tạo nhiều purchases nhất?</li>
+<li>Campaign nào có conversion rate tốt?</li>
+<li>Product, category hoặc brand nào tạo doanh thu cao nhất?</li>
+<li>Premium product có hiệu quả hơn non-premium product không?</li>
+<li>Product hoặc category nào có refund rate cao?</li>
+<li>Experiment group nào trong A/B testing có conversion tốt hơn?</li>
+</ul>
+<h4 id="giá-trị-dài-hạn">Giá trị dài hạn</h4>
+<p>Project có thể được mở rộng để phục vụ các bài toán nâng cao như:</p>
+<ul>
+<li>Customer segmentation.</li>
+<li>Churn analysis.</li>
+<li>Recommendation system.</li>
+<li>Marketing attribution.</li>
+<li>Data quality monitoring.</li>
+<li>CI/CD cho Glue scripts và Athena views.</li>
+<li>Cost monitoring bằng AWS Budgets.</li>
+<li>Dashboard sharing hoặc embedding.</li>
+</ul>
+<p>Nhìn chung, project không chỉ là một dashboard phân tích dữ liệu mà còn mô phỏng một quy trình Data Engineering hoàn chỉnh trên AWS. Đây là nền tảng phù hợp để phát triển kỹ năng thực tế về data lake, ETL, SQL analytics, BI dashboard, automation và monitoring trong môi trường cloud.</p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/aws-ecommerce-analytics-data-lake/vi/1-worklog/1.12-week12/" title="Worklog Tuần 12"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/aws-ecommerce-analytics-data-lake/vi/3-blogstranslated/" title="Các bài blogs đã dịch" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/aws-ecommerce-analytics-data-lake/js/clipboard.min.js?1780070717"></script>
+    <script src="/aws-ecommerce-analytics-data-lake/js/perfect-scrollbar.min.js?1780070717"></script>
+    <script src="/aws-ecommerce-analytics-data-lake/js/perfect-scrollbar.jquery.min.js?1780070717"></script>
+    <script src="/aws-ecommerce-analytics-data-lake/js/jquery.sticky.js?1780070717"></script>
+    <script src="/aws-ecommerce-analytics-data-lake/js/featherlight.min.js?1780070717"></script>
+    <script src="/aws-ecommerce-analytics-data-lake/js/highlight.pack.js?1780070717"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/aws-ecommerce-analytics-data-lake/js/modernizr.custom-3.6.0.js?1780070717"></script>
+    <script src="/aws-ecommerce-analytics-data-lake/js/learn.js?1780070717"></script>
+    <script src="/aws-ecommerce-analytics-data-lake/js/hugo-learn.js?1780070717"></script>
+
+    <link href="/aws-ecommerce-analytics-data-lake/mermaid/mermaid.css?1780070717" rel="stylesheet" />
+    <script src="/aws-ecommerce-analytics-data-lake/mermaid/mermaid.js?1780070717"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    ((i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date()));
+    ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "https://www.google-analytics.com/analytics.js",
+    "ga",
+  );
+
+  ga("create", "UA-158079754-2", "auto");
+  ga("send", "pageview");
+</script>
+
+  </body>
+</html>
