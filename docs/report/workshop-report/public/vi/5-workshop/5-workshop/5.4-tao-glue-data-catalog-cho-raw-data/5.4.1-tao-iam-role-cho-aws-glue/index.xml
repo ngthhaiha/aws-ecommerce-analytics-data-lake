@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>5.4.1. Tạo IAM Role cho AWS Glue on Báo cáo thực tập</title>
+		<link>http://localhost:59011/aws-ecommerce-analytics-data-lake/vi/5-workshop/5-workshop/5.4-tao-glue-data-catalog-cho-raw-data/5.4.1-tao-iam-role-cho-aws-glue/</link>
+		<description>Recent content in 5.4.1. Tạo IAM Role cho AWS Glue on Báo cáo thực tập</description>
+		<generator>Hugo</generator>
+		<language>vi</language>
+		
+		
+		
+		
+			<lastBuildDate></lastBuildDate>
+		
+			<atom:link href="http://localhost:59011/aws-ecommerce-analytics-data-lake/vi/5-workshop/5-workshop/5.4-tao-glue-data-catalog-cho-raw-data/5.4.1-tao-iam-role-cho-aws-glue/index.xml" rel="self" type="application/rss+xml" />
+	</channel>
+</rss>

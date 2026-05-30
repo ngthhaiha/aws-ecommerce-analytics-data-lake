@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>5.18.1. Tạo SNS Email Notification on Internship Report</title>
-		<link>http://localhost:63626/aws-ecommerce-analytics-data-lake/5-workshop/5.18-automation-and-monitoring-layer/5.18.1-tao-sns-email-notification/</link>
-		<description>Recent content in 5.18.1. Tạo SNS Email Notification on Internship Report</description>
+		<title>5.18.1. Create SNS Email Notification on Internship Report</title>
+		<link>http://localhost:59011/aws-ecommerce-analytics-data-lake/5-workshop/5.18-automation-and-monitoring-layer/5.18.1-tao-sns-email-notification/</link>
+		<description>Recent content in 5.18.1. Create SNS Email Notification on Internship Report</description>
 		<generator>Hugo</generator>
 		<language>en</language>
 		
@@ -12,6 +12,6 @@
 		
 			<lastBuildDate></lastBuildDate>
 		
-			<atom:link href="http://localhost:63626/aws-ecommerce-analytics-data-lake/5-workshop/5.18-automation-and-monitoring-layer/5.18.1-tao-sns-email-notification/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:59011/aws-ecommerce-analytics-data-lake/5-workshop/5.18-automation-and-monitoring-layer/5.18.1-tao-sns-email-notification/index.xml" rel="self" type="application/rss+xml" />
 	</channel>
 </rss>

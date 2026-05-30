@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>5.11. Kết nối QuickSight với Athena on Internship Report</title>
-		<link>http://localhost:63626/aws-ecommerce-analytics-data-lake/5-workshop/5.11-ket-noi-quicksight-voi-athena/</link>
-		<description>Recent content in 5.11. Kết nối QuickSight với Athena on Internship Report</description>
+		<title>5.11. Connect QuickSight to Athena on Internship Report</title>
+		<link>http://localhost:59011/aws-ecommerce-analytics-data-lake/5-workshop/5.11-ket-noi-quicksight-voi-athena/</link>
+		<description>Recent content in 5.11. Connect QuickSight to Athena on Internship Report</description>
 		<generator>Hugo</generator>
 		<language>en</language>
 		
@@ -12,6 +12,6 @@
 		
 			<lastBuildDate></lastBuildDate>
 		
-			<atom:link href="http://localhost:63626/aws-ecommerce-analytics-data-lake/5-workshop/5.11-ket-noi-quicksight-voi-athena/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:59011/aws-ecommerce-analytics-data-lake/5-workshop/5.11-ket-noi-quicksight-voi-athena/index.xml" rel="self" type="application/rss+xml" />
 	</channel>
 </rss>
