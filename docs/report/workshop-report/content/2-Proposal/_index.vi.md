@@ -71,56 +71,9 @@ Về ROI, giải pháp giúp giảm thời gian thao tác thủ công, giảm th
 
 Giải pháp sử dụng kiến trúc AWS Serverless Data Analytics, trong đó các thành phần chính bao gồm Amazon S3, AWS Glue, Amazon Athena, Amazon QuickSight, EventBridge, CloudWatch Logs, SNS và IAM.
 
-Luồng kiến trúc tổng thể:
+**Luồng kiến trúc tổng thể:**
 
-```text
-Kaggle Marketing & E-commerce Dataset
-        |
-        v
-Local Preprocessing
-Rename columns only
-        |
-        v
-Amazon S3 Raw Zone
-raw/events/
-raw/products/
-raw/transactions/
-        |
-        v
-AWS Glue Crawler Raw
-Raw metadata catalog
-        |
-        v
-Amazon Athena Raw Validation
-Schema checks, null checks, duplicates, abnormal values
-        |
-        v
-AWS Glue Batch ETL Job
-Clean, cast, validate, enrich, partition, convert to Parquet
-        |
-        v
-Amazon S3 Curated Zone + Error Zone
-curated/fact_events/
-curated/dim_products/
-curated/fact_transactions/
-error/transactions/
-        |
-        v
-AWS Glue Crawler Curated
-Curated metadata catalog
-        |
-        v
-Amazon Athena Semantic Views
-Business-ready SQL views
-        |
-        v
-Amazon QuickSight Dashboards
-Executive, Funnel, Marketing, Product, A/B Testing
-        |
-        v
-Automation & Monitoring
-EventBridge Scheduler + Glue Workflow + EventBridge Rules + CloudWatch Logs + SNS Alert
-```
+![](/images/FlowChart/OverView.png)
 
 #### Dịch vụ AWS sử dụng
 
