@@ -348,11 +348,6 @@ This dashboard helps viewers quickly evaluate the overall status of the ecommerc
 
 #### VIII. Completed dashboard filtered by April 2023
 
-<iframe 
-  src="/files/Dashboard_1.pdf" 
-  width="100%" 
-  height="700px"
-  style="border: 1px solid #ccc;">
-</iframe>
+{{< pdf src="/files/Dashboard_1.pdf" >}}
 
 Or download the file here: [Download PDF](/files/Dashboard_1.pdf)

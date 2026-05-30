@@ -15,21 +15,21 @@
     <title>Week 11 Worklog :: Internship Report</title>
 
     
-    <link href="/aws-ecommerce-analytics-data-lake/css/nucleus.css?1780134641" rel="stylesheet">
-    <link href="/aws-ecommerce-analytics-data-lake/css/fontawesome-all.min.css?1780134641" rel="stylesheet">
-    <link href="/aws-ecommerce-analytics-data-lake/css/hybrid.css?1780134641" rel="stylesheet">
-    <link href="/aws-ecommerce-analytics-data-lake/css/featherlight.min.css?1780134641" rel="stylesheet">
-    <link href="/aws-ecommerce-analytics-data-lake/css/perfect-scrollbar.min.css?1780134641" rel="stylesheet">
-    <link href="/aws-ecommerce-analytics-data-lake/css/auto-complete.css?1780134641" rel="stylesheet">
-    <link href="/aws-ecommerce-analytics-data-lake/css/atom-one-dark-reasonable.css?1780134641" rel="stylesheet">
-    <link href="/aws-ecommerce-analytics-data-lake/css/theme.css?1780134641" rel="stylesheet">
-    <link href="/aws-ecommerce-analytics-data-lake/css/hugo-theme.css?1780134641" rel="stylesheet">
+    <link href="/aws-ecommerce-analytics-data-lake/css/nucleus.css?1780154415" rel="stylesheet">
+    <link href="/aws-ecommerce-analytics-data-lake/css/fontawesome-all.min.css?1780154415" rel="stylesheet">
+    <link href="/aws-ecommerce-analytics-data-lake/css/hybrid.css?1780154415" rel="stylesheet">
+    <link href="/aws-ecommerce-analytics-data-lake/css/featherlight.min.css?1780154415" rel="stylesheet">
+    <link href="/aws-ecommerce-analytics-data-lake/css/perfect-scrollbar.min.css?1780154415" rel="stylesheet">
+    <link href="/aws-ecommerce-analytics-data-lake/css/auto-complete.css?1780154415" rel="stylesheet">
+    <link href="/aws-ecommerce-analytics-data-lake/css/atom-one-dark-reasonable.css?1780154415" rel="stylesheet">
+    <link href="/aws-ecommerce-analytics-data-lake/css/theme.css?1780154415" rel="stylesheet">
+    <link href="/aws-ecommerce-analytics-data-lake/css/hugo-theme.css?1780154415" rel="stylesheet">
     
-    <link href="/aws-ecommerce-analytics-data-lake/css/theme-workshop.css?1780134641" rel="stylesheet">
+    <link href="/aws-ecommerce-analytics-data-lake/css/theme-workshop.css?1780154415" rel="stylesheet">
     
     
 
-    <script src="/aws-ecommerce-analytics-data-lake/js/jquery-3.3.1.min.js?1780134641"></script>
+    <script src="/aws-ecommerce-analytics-data-lake/js/jquery-3.3.1.min.js?1780154415"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -59,14 +59,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/aws-ecommerce-analytics-data-lake/js/lunr.min.js?1780134641"></script>
-<script type="text/javascript" src="/aws-ecommerce-analytics-data-lake/js/auto-complete.js?1780134641"></script>
+<script type="text/javascript" src="/aws-ecommerce-analytics-data-lake/js/lunr.min.js?1780154415"></script>
+<script type="text/javascript" src="/aws-ecommerce-analytics-data-lake/js/auto-complete.js?1780154415"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/ngthhaiha.github.io\/aws-ecommerce-analytics-data-lake\/";
     
 </script>
-<script type="text/javascript" src="/aws-ecommerce-analytics-data-lake/js/search.js?1780134641"></script>
+<script type="text/javascript" src="/aws-ecommerce-analytics-data-lake/js/search.js?1780154415"></script>
  
   </div>
 
@@ -1300,35 +1300,56 @@
 					<td>- Learn about Glue Workflow and triggers.<br>- Design the pipeline execution order: Raw Crawler → ETL Job → Curated Crawler.<br>- Create a Glue Workflow for the project.<br>- Take notes on the role of workflow in automation.</td>
 					<td>11/05/2026</td>
 					<td>11/05/2026</td>
-					<td><a href="https://docs.aws.amazon.com/glue/latest/dg/workflows_overview.html">Overview of workflows in AWS Glue</a><br><a href="https://docs.aws.amazon.com/glue/latest/dg/about-triggers.html">AWS Glue triggers</a></td>
+					<td><a href="https://docs.aws.amazon.com/glue/latest/dg/workflows_overview.html">Overview of workflows in AWS Glue</a>
+<br><a href="https://docs.aws.amazon.com/glue/latest/dg/about-triggers.html">AWS Glue triggers</a>
+</td>
 			</tr>
 			<tr>
 					<td>Tuesday</td>
 					<td>- Create triggers in the Glue Workflow.<br>- Configure the trigger to start the raw crawler.<br>- Configure the trigger to run ETL after the raw crawler succeeds.<br>- Configure the trigger to run the curated crawler after ETL succeeds.</td>
 					<td>12/05/2026</td>
 					<td>12/05/2026</td>
-					<td><a href="https://docs.aws.amazon.com/glue/latest/dg/about-triggers.html">AWS Glue triggers</a><br><a href="https://docs.aws.amazon.com/glue/latest/dg/trigger-job.html">Starting jobs and crawlers using triggers - AWS Glue</a><br><a href="https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-jobs-trigger.html">Triggers API - AWS Glue</a></td>
+					<td><a href="https://docs.aws.amazon.com/glue/latest/dg/about-triggers.html">AWS Glue triggers</a>
+<br><a href="https://docs.aws.amazon.com/glue/latest/dg/trigger-job.html">Starting jobs and crawlers using triggers - AWS Glue</a>
+<br><a href="https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-jobs-trigger.html">Triggers API - AWS Glue</a>
+</td>
 			</tr>
 			<tr>
 					<td>Wednesday</td>
 					<td>- Test run the Glue Workflow manually.<br>- Check workflow history and each node in the graph.<br>- Check job run monitoring and CloudWatch Logs.<br>- Debug if the workflow does not run in the correct order.</td>
 					<td>13/05/2026</td>
 					<td>13/05/2026</td>
-					<td><a href="https://docs.aws.amazon.com/glue/latest/dg/view-job-runs.html">AWS Glue job run statuses on the console</a><br><a href="https://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html">Monitoring AWS Glue using Amazon CloudWatch metrics</a><br><a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html">What is Amazon CloudWatch Logs?</a><br><a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html">Working with log groups and log streams</a></td>
+					<td><a href="https://docs.aws.amazon.com/glue/latest/dg/view-job-runs.html">AWS Glue job run statuses on the console</a>
+<br><a href="https://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html">Monitoring AWS Glue using Amazon CloudWatch metrics</a>
+<br><a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html">What is Amazon CloudWatch Logs?</a>
+<br><a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html">Working with log groups and log streams</a>
+</td>
 			</tr>
 			<tr>
 					<td>Thursday</td>
 					<td>- Learn about EventBridge Scheduler and cron expressions.<br>- Create an IAM Policy that allows StartWorkflowRun.<br>- Create an IAM Role for EventBridge Scheduler.<br>- Create a schedule to automatically trigger the Glue Workflow.</td>
 					<td>14/05/2026</td>
 					<td>14/05/2026</td>
-					<td><a href="https://docs.aws.amazon.com/scheduler/latest/UserGuide/what-is-scheduler.html">What is Amazon EventBridge Scheduler?</a><br><a href="https://docs.aws.amazon.com/scheduler/latest/UserGuide/schedule-types.html">Schedule types in EventBridge Scheduler</a><br><a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/using-eventbridge-scheduler.html">Amazon EventBridge Scheduler</a><br><a href="https://docs.aws.amazon.com/glue/latest/webapi/API_StartWorkflowRun.html">StartWorkflowRun - AWS Glue API</a><br><a href="https://docs.aws.amazon.com/glue/latest/dg/create-an-iam-role.html">Step 2: Create an IAM role for AWS Glue</a></td>
+					<td><a href="https://docs.aws.amazon.com/scheduler/latest/UserGuide/what-is-scheduler.html">What is Amazon EventBridge Scheduler?</a>
+<br><a href="https://docs.aws.amazon.com/scheduler/latest/UserGuide/schedule-types.html">Schedule types in EventBridge Scheduler</a>
+<br><a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/using-eventbridge-scheduler.html">Amazon EventBridge Scheduler</a>
+<br><a href="https://docs.aws.amazon.com/glue/latest/webapi/API_StartWorkflowRun.html">StartWorkflowRun - AWS Glue API</a>
+<br><a href="https://docs.aws.amazon.com/glue/latest/dg/create-an-iam-role.html">Step 2: Create an IAM role for AWS Glue</a>
+</td>
 			</tr>
 			<tr>
 					<td>Friday</td>
 					<td>- Create an SNS Topic and email subscription.<br>- Create EventBridge Rules to capture Glue Crawler and Glue Job failures.<br>- Check rule patterns for FAILED, TIMEOUT, and STOPPED.<br>- Write the Automation &amp; Monitoring section in the report.</td>
 					<td>15/05/2026</td>
 					<td>15/05/2026</td>
-					<td><a href="https://docs.aws.amazon.com/sns/latest/dg/welcome.html">What is Amazon SNS?</a><br><a href="https://docs.aws.amazon.com/sns/latest/dg/sns-create-topic.html">Creating an Amazon SNS topic</a><br><a href="https://docs.aws.amazon.com/sns/latest/dg/sns-create-subscribe-endpoint-to-topic.html">Creating a subscription to an Amazon SNS topic</a><br><a href="https://docs.aws.amazon.com/sns/latest/dg/sns-email-notifications.html">Amazon SNS email subscription setup and management</a><br><a href="https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-glue.html">AWS Glue events - Amazon EventBridge</a><br><a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-patterns.html">Creating Amazon EventBridge event patterns</a><br><a href="https://docs.aws.amazon.com/glue/latest/dg/automating-awsglue-with-cloudwatch-events.html">Automating AWS Glue with EventBridge</a></td>
+					<td><a href="https://docs.aws.amazon.com/sns/latest/dg/welcome.html">What is Amazon SNS?</a>
+<br><a href="https://docs.aws.amazon.com/sns/latest/dg/sns-create-topic.html">Creating an Amazon SNS topic</a>
+<br><a href="https://docs.aws.amazon.com/sns/latest/dg/sns-create-subscribe-endpoint-to-topic.html">Creating a subscription to an Amazon SNS topic</a>
+<br><a href="https://docs.aws.amazon.com/sns/latest/dg/sns-email-notifications.html">Amazon SNS email subscription setup and management</a>
+<br><a href="https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-glue.html">AWS Glue events - Amazon EventBridge</a>
+<br><a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-patterns.html">Creating Amazon EventBridge event patterns</a>
+<br><a href="https://docs.aws.amazon.com/glue/latest/dg/automating-awsglue-with-cloudwatch-events.html">Automating AWS Glue with EventBridge</a>
+</td>
 			</tr>
 	</tbody>
 </table>
@@ -2326,19 +2347,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/aws-ecommerce-analytics-data-lake/js/clipboard.min.js?1780134641"></script>
-    <script src="/aws-ecommerce-analytics-data-lake/js/perfect-scrollbar.min.js?1780134641"></script>
-    <script src="/aws-ecommerce-analytics-data-lake/js/perfect-scrollbar.jquery.min.js?1780134641"></script>
-    <script src="/aws-ecommerce-analytics-data-lake/js/jquery.sticky.js?1780134641"></script>
-    <script src="/aws-ecommerce-analytics-data-lake/js/featherlight.min.js?1780134641"></script>
-    <script src="/aws-ecommerce-analytics-data-lake/js/highlight.pack.js?1780134641"></script>
+    <script src="/aws-ecommerce-analytics-data-lake/js/clipboard.min.js?1780154415"></script>
+    <script src="/aws-ecommerce-analytics-data-lake/js/perfect-scrollbar.min.js?1780154415"></script>
+    <script src="/aws-ecommerce-analytics-data-lake/js/perfect-scrollbar.jquery.min.js?1780154415"></script>
+    <script src="/aws-ecommerce-analytics-data-lake/js/jquery.sticky.js?1780154415"></script>
+    <script src="/aws-ecommerce-analytics-data-lake/js/featherlight.min.js?1780154415"></script>
+    <script src="/aws-ecommerce-analytics-data-lake/js/highlight.pack.js?1780154415"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/aws-ecommerce-analytics-data-lake/js/modernizr.custom-3.6.0.js?1780134641"></script>
-    <script src="/aws-ecommerce-analytics-data-lake/js/learn.js?1780134641"></script>
-    <script src="/aws-ecommerce-analytics-data-lake/js/hugo-learn.js?1780134641"></script>
+    <script src="/aws-ecommerce-analytics-data-lake/js/modernizr.custom-3.6.0.js?1780154415"></script>
+    <script src="/aws-ecommerce-analytics-data-lake/js/learn.js?1780154415"></script>
+    <script src="/aws-ecommerce-analytics-data-lake/js/hugo-learn.js?1780154415"></script>
 
-    <link href="/aws-ecommerce-analytics-data-lake/mermaid/mermaid.css?1780134641" rel="stylesheet" />
-    <script src="/aws-ecommerce-analytics-data-lake/mermaid/mermaid.js?1780134641"></script>
+    <link href="/aws-ecommerce-analytics-data-lake/mermaid/mermaid.css?1780154415" rel="stylesheet" />
+    <script src="/aws-ecommerce-analytics-data-lake/mermaid/mermaid.js?1780154415"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -347,11 +347,6 @@ Dashboard này giúp người xem nhanh chóng đánh giá tình hình tổng qu
 
 #### VIII. Dashboard hoàn chỉnh filter theo Tháng 4/2023
 
-<iframe 
-  src="/files/Dashboard_1.pdf" 
-  width="100%" 
-  height="700px"
-  style="border: 1px solid #ccc;">
-</iframe>
+{{< pdf src="/files/Dashboard_1.pdf" >}}
 
 Hoặc tải file tại đây: [Download PDF](/files/Dashboard_1.pdf)

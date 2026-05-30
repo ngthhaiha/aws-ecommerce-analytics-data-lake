@@ -288,11 +288,6 @@ Chart này cho biết category nào có tỷ lệ refund cao nhất. Nếu một
 
 #### XIII. Dashboard hoàn chỉnh filter theo Tháng 4/2023
 
-<iframe 
-  src="/files/Dashboard_4.pdf" 
-  width="100%" 
-  height="700px"
-  style="border: 1px solid #ccc;">
-</iframe>
+{{< pdf src="/files/Dashboard_4.pdf" >}}
 
 Hoặc tải file tại đây: [Download PDF](/files/Dashboard_4.pdf)

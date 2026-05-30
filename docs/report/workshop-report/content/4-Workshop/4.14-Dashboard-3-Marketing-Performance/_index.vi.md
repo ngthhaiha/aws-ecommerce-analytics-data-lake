@@ -296,11 +296,6 @@ Chart này cho biết conversion rate của từng campaign thay đổi theo th�
 
 #### XII. Dashboard hoàn chỉnh filter theo Tháng 4/2023
 
-<iframe 
-  src="/files/Dashboard_3.pdf" 
-  width="100%" 
-  height="700px"
-  style="border: 1px solid #ccc;">
-</iframe>
+{{< pdf src="/files/Dashboard_3.pdf" >}}
 
 Hoặc tải file tại đây: [Download PDF](/files/Dashboard_3.pdf)

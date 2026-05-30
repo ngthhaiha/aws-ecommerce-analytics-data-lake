@@ -328,11 +328,6 @@ This chart helps detect which source/device combination has a high bounce rate. 
 
 ### IX. FUNNEL ANALYTICS DASHBOARD AFTER FILTERING BY APRIL 2023
 
-<iframe 
-  src="/files/Dashboard_2.pdf" 
-  width="100%" 
-  height="700px"
-  style="border: 1px solid #ccc;">
-</iframe>
+{{< pdf src="/files/Dashboard_2.pdf" >}}
 
 Or download the file here: [Download PDF](/files/Dashboard_2.pdf)

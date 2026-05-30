@@ -15,21 +15,21 @@
     <title>Worklog Tuần 6 :: Báo cáo thực tập</title>
 
     
-    <link href="/aws-ecommerce-analytics-data-lake/css/nucleus.css?1780134641" rel="stylesheet">
-    <link href="/aws-ecommerce-analytics-data-lake/css/fontawesome-all.min.css?1780134641" rel="stylesheet">
-    <link href="/aws-ecommerce-analytics-data-lake/css/hybrid.css?1780134641" rel="stylesheet">
-    <link href="/aws-ecommerce-analytics-data-lake/css/featherlight.min.css?1780134641" rel="stylesheet">
-    <link href="/aws-ecommerce-analytics-data-lake/css/perfect-scrollbar.min.css?1780134641" rel="stylesheet">
-    <link href="/aws-ecommerce-analytics-data-lake/css/auto-complete.css?1780134641" rel="stylesheet">
-    <link href="/aws-ecommerce-analytics-data-lake/css/atom-one-dark-reasonable.css?1780134641" rel="stylesheet">
-    <link href="/aws-ecommerce-analytics-data-lake/css/theme.css?1780134641" rel="stylesheet">
-    <link href="/aws-ecommerce-analytics-data-lake/css/hugo-theme.css?1780134641" rel="stylesheet">
+    <link href="/aws-ecommerce-analytics-data-lake/css/nucleus.css?1780154415" rel="stylesheet">
+    <link href="/aws-ecommerce-analytics-data-lake/css/fontawesome-all.min.css?1780154415" rel="stylesheet">
+    <link href="/aws-ecommerce-analytics-data-lake/css/hybrid.css?1780154415" rel="stylesheet">
+    <link href="/aws-ecommerce-analytics-data-lake/css/featherlight.min.css?1780154415" rel="stylesheet">
+    <link href="/aws-ecommerce-analytics-data-lake/css/perfect-scrollbar.min.css?1780154415" rel="stylesheet">
+    <link href="/aws-ecommerce-analytics-data-lake/css/auto-complete.css?1780154415" rel="stylesheet">
+    <link href="/aws-ecommerce-analytics-data-lake/css/atom-one-dark-reasonable.css?1780154415" rel="stylesheet">
+    <link href="/aws-ecommerce-analytics-data-lake/css/theme.css?1780154415" rel="stylesheet">
+    <link href="/aws-ecommerce-analytics-data-lake/css/hugo-theme.css?1780154415" rel="stylesheet">
     
-    <link href="/aws-ecommerce-analytics-data-lake/css/theme-workshop.css?1780134641" rel="stylesheet">
+    <link href="/aws-ecommerce-analytics-data-lake/css/theme-workshop.css?1780154415" rel="stylesheet">
     
     
 
-    <script src="/aws-ecommerce-analytics-data-lake/js/jquery-3.3.1.min.js?1780134641"></script>
+    <script src="/aws-ecommerce-analytics-data-lake/js/jquery-3.3.1.min.js?1780154415"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -59,14 +59,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/aws-ecommerce-analytics-data-lake/js/lunr.min.js?1780134641"></script>
-<script type="text/javascript" src="/aws-ecommerce-analytics-data-lake/js/auto-complete.js?1780134641"></script>
+<script type="text/javascript" src="/aws-ecommerce-analytics-data-lake/js/lunr.min.js?1780154415"></script>
+<script type="text/javascript" src="/aws-ecommerce-analytics-data-lake/js/auto-complete.js?1780154415"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/ngthhaiha.github.io\/aws-ecommerce-analytics-data-lake\/\/vi";
     
 </script>
-<script type="text/javascript" src="/aws-ecommerce-analytics-data-lake/js/search.js?1780134641"></script>
+<script type="text/javascript" src="/aws-ecommerce-analytics-data-lake/js/search.js?1780154415"></script>
  
   </div>
 
@@ -1299,35 +1299,59 @@
 					<td>- Tìm hiểu AWS Glue ETL Job và PySpark DataFrame.<br>- Tìm hiểu cách đọc CSV từ S3 trong Glue script.<br>- Cấu hình Glue Job, IAM Role và job parameter.<br>- Tạo khung script ETL ban đầu.</td>
 					<td style="text-align: right">06/04/2026</td>
 					<td style="text-align: right">06/04/2026</td>
-					<td><a href="https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming.html">Programming Spark scripts - AWS Glue</a><br><a href="https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python.html">Program AWS Glue ETL scripts in PySpark</a><br><a href="https://docs.aws.amazon.com/glue/latest/dg/spark_and_pyspark.html">AWS Glue Spark and PySpark jobs</a><br><a href="https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-format-csv-home.html">Using the CSV format in AWS Glue</a></td>
+					<td><a href="https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming.html">Programming Spark scripts - AWS Glue</a>
+<br><a href="https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python.html">Program AWS Glue ETL scripts in PySpark</a>
+<br><a href="https://docs.aws.amazon.com/glue/latest/dg/spark_and_pyspark.html">AWS Glue Spark and PySpark jobs</a>
+<br><a href="https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-format-csv-home.html">Using the CSV format in AWS Glue</a>
+</td>
 			</tr>
 			<tr>
 					<td>Thứ 3</td>
 					<td>- Viết logic xử lý bảng events.<br>- Parse event_timestamp, cast kiểu dữ liệu, xử lý product_id dạng float/string.<br>- Chuẩn hóa device_type và traffic_source.<br>- Tạo các cột event_date, event_hour, year, month, day.</td>
 					<td style="text-align: right">07/04/2026</td>
 					<td style="text-align: right">07/04/2026</td>
-					<td><a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/dataframe.html">PySpark DataFrame API</a><br><a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.Column.cast.html">PySpark Column cast</a><br><a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.functions.to_timestamp.html">PySpark to_timestamp</a><br><a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.functions.to_date.html">PySpark to_date</a><br><a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/functions.html#datetime-functions">PySpark date functions</a></td>
+					<td><a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/dataframe.html">PySpark DataFrame API</a>
+<br><a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.Column.cast.html">PySpark Column cast</a>
+<br><a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.functions.to_timestamp.html">PySpark to_timestamp</a>
+<br><a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.functions.to_date.html">PySpark to_date</a>
+<br><a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/functions.html#datetime-functions">PySpark date functions</a>
+</td>
 			</tr>
 			<tr>
 					<td>Thứ 4</td>
 					<td>- Viết logic xử lý bảng products.<br>- Cast product_id, base_price và launch_date.<br>- Chuyển is_premium sang boolean.<br>- Ghi dim_products ra Parquet và kiểm tra output.</td>
 					<td style="text-align: right">08/04/2026</td>
 					<td style="text-align: right">08/04/2026</td>
-					<td><a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/dataframe.html">PySpark DataFrame API</a><br><a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.Column.cast.html">PySpark Column cast</a><br><a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.functions.to_date.html">PySpark to_date</a><br><a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.functions.when.html">PySpark when</a><br><a href="https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-format-parquet-home.html">Using the Parquet format in AWS Glue</a></td>
+					<td><a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/dataframe.html">PySpark DataFrame API</a>
+<br><a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.Column.cast.html">PySpark Column cast</a>
+<br><a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.functions.to_date.html">PySpark to_date</a>
+<br><a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.functions.when.html">PySpark when</a>
+<br><a href="https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-format-parquet-home.html">Using the Parquet format in AWS Glue</a>
+</td>
 			</tr>
 			<tr>
 					<td>Thứ 5</td>
 					<td>- Viết logic xử lý bảng transactions.<br>- Parse transaction_timestamp, cast quantity, discount_applied, gross_revenue.<br>- Xây dựng điều kiện validate transaction lỗi.<br>- Tách valid_transactions và invalid_transactions.</td>
 					<td style="text-align: right">09/04/2026</td>
 					<td style="text-align: right">09/04/2026</td>
-					<td><a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/dataframe.html">PySpark DataFrame API</a><br><a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.Column.cast.html">PySpark Column cast</a><br><a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.functions.to_timestamp.html">PySpark to_timestamp</a><br><a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.functions.when.html">PySpark when</a><br><a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.filter.html">PySpark filter</a><br><a href="https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-data-quality.html">AWS Glue Data Quality</a></td>
+					<td><a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/dataframe.html">PySpark DataFrame API</a>
+<br><a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.Column.cast.html">PySpark Column cast</a>
+<br><a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.functions.to_timestamp.html">PySpark to_timestamp</a>
+<br><a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.functions.when.html">PySpark when</a>
+<br><a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.filter.html">PySpark filter</a>
+<br><a href="https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-data-quality.html">AWS Glue Data Quality</a>
+</td>
 			</tr>
 			<tr>
 					<td>Thứ 6</td>
 					<td>- Chạy thử Glue ETL Job.<br>- Kiểm tra trạng thái job run, output S3 và CloudWatch Logs.<br>- Debug lỗi nếu có trong quá trình đọc/ghi dữ liệu.<br>- Ghi chú kết quả ETL và cập nhật report.</td>
 					<td style="text-align: right">10/04/2026</td>
 					<td style="text-align: right">10/04/2026</td>
-					<td><a href="https://docs.aws.amazon.com/glue/latest/dg/view-job-runs.html">AWS Glue job run statuses on the console</a><br><a href="https://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html">Monitoring AWS Glue using Amazon CloudWatch metrics</a><br><a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html">What is Amazon CloudWatch Logs?</a><br><a href="https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-format-parquet-home.html">Using the Parquet format in AWS Glue</a></td>
+					<td><a href="https://docs.aws.amazon.com/glue/latest/dg/view-job-runs.html">AWS Glue job run statuses on the console</a>
+<br><a href="https://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html">Monitoring AWS Glue using Amazon CloudWatch metrics</a>
+<br><a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html">What is Amazon CloudWatch Logs?</a>
+<br><a href="https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-format-parquet-home.html">Using the Parquet format in AWS Glue</a>
+</td>
 			</tr>
 	</tbody>
 </table>
@@ -2299,19 +2323,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/aws-ecommerce-analytics-data-lake/js/clipboard.min.js?1780134641"></script>
-    <script src="/aws-ecommerce-analytics-data-lake/js/perfect-scrollbar.min.js?1780134641"></script>
-    <script src="/aws-ecommerce-analytics-data-lake/js/perfect-scrollbar.jquery.min.js?1780134641"></script>
-    <script src="/aws-ecommerce-analytics-data-lake/js/jquery.sticky.js?1780134641"></script>
-    <script src="/aws-ecommerce-analytics-data-lake/js/featherlight.min.js?1780134641"></script>
-    <script src="/aws-ecommerce-analytics-data-lake/js/highlight.pack.js?1780134641"></script>
+    <script src="/aws-ecommerce-analytics-data-lake/js/clipboard.min.js?1780154415"></script>
+    <script src="/aws-ecommerce-analytics-data-lake/js/perfect-scrollbar.min.js?1780154415"></script>
+    <script src="/aws-ecommerce-analytics-data-lake/js/perfect-scrollbar.jquery.min.js?1780154415"></script>
+    <script src="/aws-ecommerce-analytics-data-lake/js/jquery.sticky.js?1780154415"></script>
+    <script src="/aws-ecommerce-analytics-data-lake/js/featherlight.min.js?1780154415"></script>
+    <script src="/aws-ecommerce-analytics-data-lake/js/highlight.pack.js?1780154415"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/aws-ecommerce-analytics-data-lake/js/modernizr.custom-3.6.0.js?1780134641"></script>
-    <script src="/aws-ecommerce-analytics-data-lake/js/learn.js?1780134641"></script>
-    <script src="/aws-ecommerce-analytics-data-lake/js/hugo-learn.js?1780134641"></script>
+    <script src="/aws-ecommerce-analytics-data-lake/js/modernizr.custom-3.6.0.js?1780154415"></script>
+    <script src="/aws-ecommerce-analytics-data-lake/js/learn.js?1780154415"></script>
+    <script src="/aws-ecommerce-analytics-data-lake/js/hugo-learn.js?1780154415"></script>
 
-    <link href="/aws-ecommerce-analytics-data-lake/mermaid/mermaid.css?1780134641" rel="stylesheet" />
-    <script src="/aws-ecommerce-analytics-data-lake/mermaid/mermaid.js?1780134641"></script>
+    <link href="/aws-ecommerce-analytics-data-lake/mermaid/mermaid.css?1780154415" rel="stylesheet" />
+    <script src="/aws-ecommerce-analytics-data-lake/mermaid/mermaid.js?1780154415"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

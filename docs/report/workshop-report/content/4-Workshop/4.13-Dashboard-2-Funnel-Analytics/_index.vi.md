@@ -294,11 +294,6 @@ Chart này giúp phát hiện source/device nào có bounce rate cao. Ví dụ n
 
 ### IX. DASHBOARD FUNNEL ANALYTICS SAU KHI FILTER THEO THÁNG 4/2023
 
-<iframe 
-  src="/files/Dashboard_2.pdf" 
-  width="100%" 
-  height="700px"
-  style="border: 1px solid #ccc;">
-</iframe>
+{{< pdf src="/files/Dashboard_2.pdf" >}}
 
 Hoặc tải file tại đây: [Download PDF](/files/Dashboard_2.pdf)

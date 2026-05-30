@@ -246,11 +246,6 @@ This table is used to check details by day and experiment group. When the charts
 
 #### VIII. Completed dashboard filtered by 2023
 
-<iframe 
-  src="/files/Dashboard_4.pdf" 
-  width="100%" 
-  height="700px"
-  style="border: 1px solid #ccc;">
-</iframe>
+{{< pdf src="/files/Dashboard_5.pdf" >}}
 
-Or download the file here: [Download PDF](/files/Dashboard_4.pdf)
+Or download the file here: [Download PDF](/files/Dashboard_5.pdf)

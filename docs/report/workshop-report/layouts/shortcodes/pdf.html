@@ -1,0 +1,12 @@
+{{- $src := .Get "src" -}}
+{{- $width := .Get "width" | default "100%" -}}
+{{- $height := .Get "height" | default "700px" -}}
+{{- if and (hasPrefix $src "/") (not (hasPrefix $src "//")) -}}
+  {{- $src = replaceRE "^/" "" $src | relURL -}}
+{{- end -}}
+<iframe
+  src="{{ $src | safeURL }}"
+  width="{{ $width }}"
+  height="{{ $height }}"
+  style="border: 1px solid #ccc;">
+</iframe>

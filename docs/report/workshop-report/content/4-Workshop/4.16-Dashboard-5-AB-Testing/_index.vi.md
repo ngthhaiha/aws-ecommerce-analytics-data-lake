@@ -208,11 +208,6 @@ Dùng để kiểm tra chi tiết theo ngày và từng experiment group. Khi ch
 
 #### VIII. Dashboard hoàn chỉnh filter theo năm 2023
 
-<iframe 
-  src="/files/Dashboard_4.pdf" 
-  width="100%" 
-  height="700px"
-  style="border: 1px solid #ccc;">
-</iframe>
+{{< pdf src="/files/Dashboard_5.pdf" >}}
 
-Hoặc tải file tại đây: [Download PDF](/files/Dashboard_4.pdf)
+Hoặc tải file tại đây: [Download PDF](/files/Dashboard_5.pdf)

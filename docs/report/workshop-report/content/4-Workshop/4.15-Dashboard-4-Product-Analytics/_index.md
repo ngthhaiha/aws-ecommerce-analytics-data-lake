@@ -290,11 +290,6 @@ This chart shows which category has the highest refund rate. If a category has a
 
 #### XIII. Completed dashboard filtered by April 2023
 
-<iframe 
-  src="/files/Dashboard_4.pdf" 
-  width="100%" 
-  height="700px"
-  style="border: 1px solid #ccc;">
-</iframe>
+{{< pdf src="/files/Dashboard_4.pdf" >}}
 
 Or download the file here: [Download PDF](/files/Dashboard_4.pdf)
