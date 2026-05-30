@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>5.18.2. Create Glue Workflow on Internship Report</title>
-		<link>http://localhost:59011/aws-ecommerce-analytics-data-lake/5-workshop/5.18-automation-and-monitoring-layer/5.18.2-tao-glue-workflow/</link>
+		<link>http://localhost:62912/aws-ecommerce-analytics-data-lake/5-workshop/5.18-automation-and-monitoring-layer/5.18.2-tao-glue-workflow/</link>
 		<description>Recent content in 5.18.2. Create Glue Workflow on Internship Report</description>
 		<generator>Hugo</generator>
 		<language>en</language>
@@ -12,6 +12,6 @@
 		
 			<lastBuildDate></lastBuildDate>
 		
-			<atom:link href="http://localhost:59011/aws-ecommerce-analytics-data-lake/5-workshop/5.18-automation-and-monitoring-layer/5.18.2-tao-glue-workflow/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:62912/aws-ecommerce-analytics-data-lake/5-workshop/5.18-automation-and-monitoring-layer/5.18.2-tao-glue-workflow/index.xml" rel="self" type="application/rss+xml" />
 	</channel>
 </rss>
